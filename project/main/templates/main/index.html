@@ -1,0 +1,108 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add styles for parallax */
+        .parallax-container {
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parallax-container .parallax {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        .parallax-container img {
+            min-height: 400px;
+            min-width: 100%;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'main/img/realtor.png' %}" alt="Логотип" class="img-fluid" style="max-height: 70px; max-width: 150px;">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'index' %}">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">ЖК Сады Ривьеры</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'apartmentsearch' %}">поиск квартир</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">коммерческие квартиры</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">оформление документов</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-success">Заказать звонок</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Add parallax sections -->
+    <div class="parallax-container" style="height: 700px;">
+        <div class="parallax"><img src="{% static 'main/img/first.jpg' %}"></div>
+      </div>
+      
+      <div class="black-background">
+        <div class="section">
+            
+            <img src="{% static 'main/img/choose.png' %}" alt="Логотип" class="img-fluid" style="height: 150px; width:100%;">
+
+          <h2 class="header text-center" style="height: 80px;">СКОЛЬКО КОМНАТ У ТВОЕЙ МЕЧТЫ?</h2>
+
+          <div class="global-flats__item">
+            <img src="{% static 'main/img/1.jpg' %}" alt="1 комнатная" class="global-flats__img">
+            <h2>1 КОМНАТНЫЕ</h2>
+            <p>от 18 396 у.е.</p>
+            <button class="green-button">Подобрать квартиру</button>
+          </div>
+
+          <div class="global-flats__item">
+            <img src="{% static 'main/img/2.jpg' %}" alt="2 комнатная" class="global-flats__img">
+            <h2>2 КОМНАТНЫЕ</h2>
+            <p>от 26 336 у.е</p>
+            <button class="green-button">Подобрать квартиру</button>
+          </div>
+
+          <div class="global-flats__item">
+            <img src="{% static 'main/img/3.jpg' %}" alt="3 комнатная" class="global-flats__img">
+            <h2>3 КОМНАТНЫЕ</h2>
+            <p>от 36 314 у.е.</p>
+            <button class="green-button">Подобрать квартиру</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="parallax-container">
+        <div class="parallax"><img src="{% static 'main/img/kv.jpg' %}"></div>
+      </div>
+
+    <script src="{% static 'main/js/jquery.min.js' %}"></script>
+    <script src="{% static 'main/js/bootstrap.min.js'%}"></script>
+</body>
+</html>

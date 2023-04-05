@@ -1,0 +1,37 @@
+.black-background .section {
+    text-align: center;
+  }
+  
+  .global-flats__item {
+    display: inline-block;
+    margin-right: 1cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+  }
+  
+  .global-flats__item img {
+    width: 100%;
+  }
+  
+  .global-flats__item h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .global-flats__item p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .green-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .header {
+    margin-top: 10px;
+  }
