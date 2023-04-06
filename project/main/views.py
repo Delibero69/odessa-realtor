@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def index(request):
     context = {
-        'title': 'Купить квартиру у моря на Котовского',
+        'title': 'Купить квартиру',
     }
     return render(request, "main/index.html", context)
 

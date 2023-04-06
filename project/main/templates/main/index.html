@@ -1,68 +1,82 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} {% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        /* Add styles for parallax */
-        .parallax-container {
-            height: 400px;
-            position: relative;
-            overflow: hidden;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .parallax-container .parallax {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            z-index: -1;
-        }
+  <title>{% block title %} {% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-        .parallax-container img {
-            min-height: 400px;
-            min-width: 100%;
-            opacity: 0.7;
-        }
-    </style>
+	<style>
+	
+	</style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="{% url 'index' %}">
-            <img src="{% static 'main/img/realtor.png' %}" alt="Логотип" class="img-fluid" style="max-height: 70px; max-width: 150px;">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                
-                <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'index' %}">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about' %}">ЖК Сады Ривьеры</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'apartmentsearch' %}">поиск квартир</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'contact' %}">коммерческие квартиры</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'contact' %}">оформление документов</a>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-success">Заказать звонок</button>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<a class="navbar-brand" href="{% url 'index' %}">
+		<img src="{% static 'main/img/realtor.png' %}" alt="Логотип" class="img-fluid" style="max-height: 70px; max-width: 150px;">
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav ml-auto">
+
+			<li class="nav-item active">
+				<a class="nav-link" href="{% url 'index' %}">Главная</a>
+			</li>
+
+			<li class="nav-item dropdown dropdown-hover">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Покупка квартиры
+				</a>
+				<div class="dropdown-hover-content dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#">Жилой район "Сады Ривьеры"</a>
+
+				</div>
+      </li>
+
+      <li class="nav-item dropdown dropdown-hover">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Коммерческая недвижимость
+        </a>
+        <div class="dropdown-hover-content dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">ФАСАДНЫЕ ПОМЕЩЕНИЯ</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">КЛАДОВЫЕ</a>
+        </div>
+    </li>
+    
+    <li class="nav-item dropdown dropdown-hover">
+        <a class="nav-link dropdown-toggle1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Аренда
+        </a>
+        <div class="dropdown-hover-content dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">КВАРТИРЫ</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">КЛАДОВЫЕ</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">КОММЕРЧЕСКИЕ ПОМЕЩЕНИЯ</a>
+        </div>
+    </li>
+
+      <li class="nav-item">
+				<a class="nav-link" href="{% url 'index' %}">Оформление документов</a>
+			</li>
+
+      <li class="nav-item">
+        <button type="button" class="btn btn-success">Заказать звонок</button>
+      </li>
+        </ul>
+        </div>
+  </nav>
+
+
+    
     <!-- Add parallax sections -->
     <div class="parallax-container" style="height: 700px;">
         <div class="parallax"><img src="{% static 'main/img/first.jpg' %}"></div>
@@ -97,12 +111,53 @@
           </div>
         </div>
       </div>
-      
+
+    <div class="container" style="height: 150px; width:100%;">
+  <h2>ВЫБОР КВАРТИРЫ ПО ПАРАМЕТРАМ</h2>
+  <div class="blocks">
+    <div class="block">
+      <div class="title">Очередь:</div>
+      <div class="dropdown">
+        <div class="dropdown-label">Все очереди</div>
+        <div class="dropdown-options">
+          <div class="dropdown-option">Вариант 1</div>
+          <div class="dropdown-option">Вариант 2</div>
+          <div class="dropdown-option">Вариант 3</div>
+        </div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="title">Количество комнат:</div>
+      <div class="dropdown">
+        <div class="dropdown-label">Все варианты</div>
+        <div class="dropdown-options">
+          <div class="dropdown-option">Вариант 1</div>
+          <div class="dropdown-option">Вариант 2</div>
+          <div class="dropdown-option">Вариант 3</div>
+        </div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="title">Площадь:</div>
+      <div class="range-slider">
+        <div class="range-slider-label">22 - 79 кв. м.</div>
+        <div class="irs-slider"></div>
+      </div>
+      <div class="range-slider-copy">
+        <div class="range-slider-label">22 - 79 кв. м.</div>
+        <div class="irs-slider"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
       <div class="parallax-container">
         <div class="parallax"><img src="{% static 'main/img/kv.jpg' %}"></div>
       </div>
 
-    <script src="{% static 'main/js/jquery.min.js' %}"></script>
-    <script src="{% static 'main/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'main/js/my.js'%}"></script>
 </body>
 </html>
