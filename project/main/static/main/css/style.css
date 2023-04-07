@@ -99,16 +99,22 @@
  */
 
 
+.carousel-indicators button {
 
+  width: 2.5rem;
+  margin: 0.2cm;
+  height: 0.4rem;
+  /* Другие свойства стиля, если нужно */
+}
 
+.carousel-control-prev-icon {
+  font-size: 0.75rem; /* Set the font size to 0.75 rem */
+}
 
-
-
-
-
-
-
-
+.carousel-inner{
+  z-index: 1;
+  background-image: url('https://redpost.com.ua/content/documents/12419/1241874/images/756358979194268.jpg');
+}
 
 
 
