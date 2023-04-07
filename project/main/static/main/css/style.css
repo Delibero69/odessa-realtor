@@ -1,8 +1,15 @@
 
+  .navbar-nav ml-auto{
+    left: 20%;
+    margin-left: 20%;
+  }
+
+
 	.dropdown-hover:hover .dropdown-hover-content {
     display: block;
     background-color: rgb(31, 148, 31);
     color: white;
+    
   }
 
   .dropdown-hover + .dropdown-hover {
