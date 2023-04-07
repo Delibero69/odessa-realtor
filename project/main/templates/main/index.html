@@ -80,13 +80,12 @@
     <!-- Add parallax sections -->
     <div class="parallax-container" style="height: 700px;">
         <div class="parallax"><img src="{% static 'main/img/first.jpg' %}"></div>
-      </div>
+    </div>
       
       <div class="black-background">
         <div class="section">
-            
             <img src="{% static 'main/img/choose.png' %}" alt="Логотип" class="img-fluid" style="height: 150px; width:100%;">
-
+        
           <h2 class="header text-center" style="height: 80px;">СКОЛЬКО КОМНАТ У ТВОЕЙ МЕЧТЫ?</h2>
 
           <div class="global-flats__item">
@@ -109,50 +108,52 @@
             <p>от 36 314 у.е.</p>
             <button class="green-button">Подобрать квартиру</button>
           </div>
+      </div>
+
+
+    
+      <div class="container" style="height: 250px; width: 100vw;">
+        <h2>ВЫБОР КВАРТИРЫ ПО ПАРАМЕТРАМ</h2>
+        <div class="blocks">
+      
+          <div class="block">
+            <div class="title">Очередь:</div>
+            <div class="dropdown">
+              <div class="dropdown-label">Все очереди</div>
+              <div class="dropdown-options">
+                <div class="dropdown-option">Вариант 1</div>
+                <div class="dropdown-option">Вариант 2</div>
+                <div class="dropdown-option">Вариант 3</div> 
+              </div>
+            </div>
+          </div>
+      
+          <div class="block">
+            <div class="title">Количество комнат:</div>
+            <div class="dropdown">
+              <div class="dropdown-label">Все варианты</div>
+              <div class="dropdown-options">
+                <div class="dropdown-option">Вариант 1</div>
+                <div class="dropdown-option">Вариант 2</div>
+                <div class="dropdown-option">Вариант 3</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="block">
+            
+              <div class="title">Площадь:</div>
+              <label for="customRange1" class="form-label">22 - 79 кв. м.</label> 
+              <input type="range" class="form-range" min="22" max="79" id="customRange1">
+          
+              <div class="title">Этаж:</div>
+              <label for="customRange2" class="form-label">1 - 12</label> 
+              <input type="range" class="form-range" min="1" max="12" id="customRange2">
+          </div>
+          
+      
         </div>
       </div>
-
-    <div class="container" style="height: 150px; width:100%;">
-  <h2>ВЫБОР КВАРТИРЫ ПО ПАРАМЕТРАМ</h2>
-  <div class="blocks">
-    <div class="block">
-      <div class="title">Очередь:</div>
-      <div class="dropdown">
-        <div class="dropdown-label">Все очереди</div>
-        <div class="dropdown-options">
-          <div class="dropdown-option">Вариант 1</div>
-          <div class="dropdown-option">Вариант 2</div>
-          <div class="dropdown-option">Вариант 3</div>
-        </div>
-      </div>
-    </div>
-    <div class="block">
-      <div class="title">Количество комнат:</div>
-      <div class="dropdown">
-        <div class="dropdown-label">Все варианты</div>
-        <div class="dropdown-options">
-          <div class="dropdown-option">Вариант 1</div>
-          <div class="dropdown-option">Вариант 2</div>
-          <div class="dropdown-option">Вариант 3</div>
-        </div>
-      </div>
-    </div>
-    <div class="block">
-      <div class="title">Площадь:</div>
-      <div class="range-slider">
-        <div class="range-slider-label">22 - 79 кв. м.</div>
-        <div class="irs-slider"></div>
-      </div>
-      <div class="range-slider-copy">
-        <div class="range-slider-label">22 - 79 кв. м.</div>
-        <div class="irs-slider"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
 
       <div class="parallax-container">
         <div class="parallax"><img src="{% static 'main/img/kv.jpg' %}"></div>
