@@ -4,16 +4,11 @@
     <title>Форма отправки</title>
 </head>
 <body>
-    <h1>Форма отправки</h1>
-    <form action="{% url 'call' %}" method="post">
-        {% csrf_token %}
-        <label for="name">Имя:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
-        <label for="phone">Номер телефона:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <br>
-        <input type="submit" value="Отправить">
-    </form>
+<h1>Contact Us</h1>
+<form method="post" action="{% url 'call' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Send</button>
+</form>
 </body>
 </html>
