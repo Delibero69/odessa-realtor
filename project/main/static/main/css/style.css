@@ -90,16 +90,19 @@
     font-size: 0.75rem; /* Set the font size to 0.75 rem */
 }
 
-.container {
+.blue-background{
     background-color: rgb(85, 189, 85);
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    /* height: 100%; */
-
 }
+
+
+.blocks {
+    margin-left: 20%;
+}
+
 h2 {
     margin-top: 0;
 }
