@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
-
 def index(request):
     context = {
         'title': 'Купить квартиру',
@@ -9,6 +8,6 @@ def index(request):
 
 
 def call(request):
-    return render(request, "main/call.html")
+    return render(request, 'main/call.html',)
 
 
