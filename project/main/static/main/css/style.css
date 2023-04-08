@@ -209,7 +209,14 @@
     margin: 0 auto;
 
 }
-
+.btn-container {
+  text-align: center;
+}
+.mb-3{
+    /*position: absolute;*/
+   width: 50%;
+    margin: 0 auto;
+}
 .back_container {
     position: absolute;
     width: 100%;
