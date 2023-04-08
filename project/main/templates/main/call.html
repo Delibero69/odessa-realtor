@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Форма отправки</title>
 </head>
 <body>
-<div>sd</div>
+    <h1>Форма отправки</h1>
+    <form action="{% url 'call' %}" method="post">
+        {% csrf_token %}
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <input type="submit" value="Отправить">
+    </form>
 </body>
 </html>
