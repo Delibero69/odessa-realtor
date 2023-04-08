@@ -2,37 +2,43 @@
 
 
 
-	.dropdown-hover:hover .dropdown-hover-content {
-    display: block;
-    background-color: rgb(31, 148, 31);
-    color: white;
-    
-  }
-
-  .dropdown-hover + .dropdown-hover {
-    margin-left: 20px;
+#kn {
+  margin-left: 0%;
+  white-space: nowrap;
 }
-.navbar-nav .nav-item .nav-link.dropdown-toggle {
-  margin-left: 0.1cm;
+
+#number{
+  margin-left: 9%;
 }
 
 
-.navbar-nav .nav-item .nav-link.dropdown-toggle1 {
-  margin-left: 85px;
+#oformlenie{
+  margin-left: 4%;
+
 }
 
-.navbar-dark .navbar-nav .nav-link.dropdown-toggle1:hover+.dropdown-hover-content .dropdown-item {
-  color: white;
+#pokypka{
+  margin-left: 30%;
 }
 
-.navbar-dark .navbar-nav .nav-link.dropdown-toggle:hover+.dropdown-hover-content .dropdown-item {
-  color: white;
+#kom_nedv{
+  margin-left: 5%;
 }
-  
+
+#rent{
+  margin-left: 15%;
+}
 
 
 
 
+
+
+
+
+.dropdown-hover-content {
+  right: -100%;
+} 
 
 
 .black-background .section {
