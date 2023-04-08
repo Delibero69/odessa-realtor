@@ -10,4 +10,7 @@ def index(request):
 def call(request):
     return render(request, 'main/call.html',)
 
+def show_apartment(request):
+    return render(request, 'main/show_apartment.html', )
+
 

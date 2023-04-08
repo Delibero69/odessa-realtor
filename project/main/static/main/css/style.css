@@ -3,9 +3,11 @@
     margin-left: 0%;
     white-space: nowrap;
 }
+
 #number {
     margin-left: 9%;
 }
+
 #oformlenie {
     margin-left: 4%;
 }
@@ -21,12 +23,15 @@
 #rent {
     margin-left: 15%;
 }
+
 .dropdown-hover-content {
     right: -100%;
 }
+
 .black-background .section {
     text-align: center;
 }
+
 .global-flats__item {
     display: inline-block;
     margin-right: 1cm;
@@ -60,11 +65,13 @@
 .header {
     margin-top: 10px;
 }
+
 .parallax-container {
     height: 400px;
     position: relative;
     overflow: hidden;
 }
+
 .parallax-container .parallax {
     position: absolute;
     top: 0;
@@ -73,6 +80,7 @@
     right: 0;
     z-index: -1;
 }
+
 .parallax-container img {
     min-height: 400px;
     min-width: 100%;
@@ -86,11 +94,12 @@
     height: 0.4rem;
     /* Другие свойства стиля, если нужно */
 }
+
 .carousel-control-prev-icon {
     font-size: 0.75rem; /* Set the font size to 0.75 rem */
 }
 
-.blue-background{
+.blue-background {
     background-color: rgb(85, 189, 85);
     color: white;
     display: flex;
@@ -103,24 +112,24 @@
     margin-left: 20%;
 }
 
-h2 {
-    margin-top: 0;
-}
 .blocks {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 800px;
 }
+
 .block {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .title {
     margin-bottom: 10px;
     font-weight: bold;
 }
+
 .dropdown {
     position: relative;
     width: 150px;
@@ -128,6 +137,7 @@ h2 {
     cursor: pointer;
     user-select: none;
 }
+
 .dropdown-label {
     display: flex;
     align-items: center;
@@ -136,6 +146,7 @@ h2 {
     border: 1px solid white;
     border-radius: 5px;
 }
+
 .dropdown-options {
     position: absolute;
     top: 100%;
@@ -148,6 +159,7 @@ h2 {
     z-index: 1;
     display: none;
 }
+
 .dropdown-option {
     padding: 5px 10px;
     cursor: pointer;
@@ -169,9 +181,11 @@ h2 {
     flex-direction: column;
     position: relative;
 }
+
 .range-slider-label {
     font-weight: bold;
 }
+
 .range-slider-copy {
     margin-top: 10px;
     display: flex;
@@ -181,9 +195,32 @@ h2 {
     position: relative;
 }
 
+#btn_show {
+    /*display: block;*/
+    margin-top: 160px;
+    left: 47%;
+    position: absolute;
+}
 
 
-@media(max-width:1400px){
+#accordionFlushExample {
+    background-color: olive;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.back_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://riviera-gardens.com.ua/img/newImg/bg_faq.png');
+
+    margin: 0 auto;
+}
+
+
+@media (max-width: 1400px) {
     #kn {
         margin-left: 0%;
         white-space: nowrap;

@@ -1,4 +1,4 @@
-
+from django.conf import settings
 from django.urls import path
 from main.views import *
 
@@ -8,8 +8,6 @@ from django.contrib import admin
 from django.urls import path,include
 
 
-from nedvijka import settings
-from main.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),

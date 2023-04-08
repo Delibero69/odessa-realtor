@@ -1,169 +1,58 @@
+{% extends 'main/base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>{% block title %} {% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
-    {% comment %}
-        <link rel="stylesheet"
-              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> {% endcomment %}
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <style>
-        {% comment %} {% static 'main/img/realtor.png' %} {% endcomment %}
-    </style>
-</head>
-<body>
-<nav class="navbar navbar-expand-lg bg-dark fixed-top" style="padding-left: 0.3cm; padding-right: 0.3cm;">
-    <a class="navbar-brand" href="{% url 'index' %}">
-        <img src="{% static 'main/img/realtor.png' %}" alt="Логотип" class="img-fluid"
-             style="max-height: 70px; max-width: 150px;">
-    </a>
-    <div class="container-fluid">
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                <li class="nav-item dropdown" id='pokypka'>
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Покупка квартиры
-                    </a>
-                    <ul class="dropdown-menu style=">
-
-                        <li><a class="dropdown-item" href="#">Жилой район "Сады Ривьеры"</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown" id='kom_nedv'>
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Коммерческая недвижимость
-                    </a>
-                    <ul class="dropdown-menu style=">
-
-                        <li><a class="dropdown-item" href="#">ФАСАДНЫЕ ПОМЕЩЕНИЯ</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">КЛАДОВЫЕ</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown" id='rent'>
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Аренда
-                    </a>
-                    <ul class="dropdown-menu style=">
-
-                        <li><a class="dropdown-item" href="#">КВАРТИРЫ</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">КЛАДОВЫЕ</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">КОММЕРЧЕСКИЕ ПОМЕЩЕНИЯ</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown" id='oformlenie'>
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Оформление документов
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">1</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">2</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">3</a></li>
-                    </ul>
-                </li>
-
-                <a class="navbar-brand text-white" id='number' href="#">+380972831340</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <li class="nav-item" id='kn'>
-                    <a type="button" class="btn btn-success" href="{% url 'call' %}">Заказать звонок</a>
-                </li>
-            </ul>
-
-        </div>
-    </div>
-</nav>
-
-
-
-
-
+{% block content %}
 
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class=""
-                aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
-                class=""></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"
-                class="active" aria-current="true"></button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class=""
+                    aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
+                    class=""></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"
+                    class="active" aria-current="true"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item" data-bs-interval="10000">
+                <img src="{% static 'main/img/rent.jpg' %}" class="d-block w-100" width="100%" height="600" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Коммерческие обЬекты</h5>
+                    <p>У нас есть варианты именно для вас.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+
+                <img src="{% static 'main/img/com_nedv.jpg' %}" class="d-block w-100" width="100%" height="600"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Аренда</h5>
+                    <p>Тут вы можете арендовать помещение под ваши нужды</p>
+                </div>
+            </div>
+            <div class="carousel-item active">
+
+                <img src="{% static 'main/img/apart.jpg' %}" class="d-block w-100" width="100%" height="600" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Квартиры</h5>
+                    <p>Димон лох.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
     </div>
-    <div class="carousel-inner">
-        <div class="carousel-item" data-bs-interval="10000">
-            <img src="{% static 'main/img/rent.jpg' %}" class="d-block w-100" width="100%" height="600" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Коммерческие обЬекты</h5>
-                <p>У нас есть варианты именно для вас.</p>
-            </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-
-            <img src="{% static 'main/img/com_nedv.jpg' %}" class="d-block w-100" width="100%" height="600" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Аренда</h5>
-                <p>Тут вы можете арендовать помещение под ваши нужды</p>
-            </div>
-        </div>
-        <div class="carousel-item active">
-
-            <img src="{% static 'main/img/apart.jpg' %}" class="d-block w-100" width="100%" height="600" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Квартиры</h5>
-                <p>Димон лох.</p>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </button>
-</div>
 
 
-<div class="black-background">
+    <div class="black-background">
     <div class="section">
         <img src="{% static 'main/img/choose.png' %}" alt="Логотип" class="img-fluid"
              style="height: 150px; width:100%;">
 
-        <h2 class="header text-center" style="height: 80px;">СКОЛЬКО КОМНАТ У ТВОЕЙ МЕЧТЫ?</h2>
+        <h2 class="header text-center" style="height: 80px;margin-top: 20px;">СКОЛЬКО КОМНАТ У ТВОЕЙ МЕЧТЫ?</h2>
 
         <div class="global-flats__item">
             <img src="{% static 'main/img/1.jpg' %}" alt="1 комнатная" class="global-flats__img">
@@ -188,90 +77,137 @@
     </div>
 
 
-    <div class="blue-background " style="height: 300px;width: 100%">
-        <div class="container">
+{% endblock %}
 
-            <h2 style="text-align: center;">ВЫБОР КВАРТИРЫ ПО ПАРАМЕТРАМ</h2>
-            <div class="blocks">
 
-                <div class="block">
-                    <div class="title">Очередь:</div>
 
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Все очереди</option>
-                    <option value="1">Секция 1</option>
-                    <option value="2">Секция 2</option>
-                    <option value="3">Секция 3</option>
-                    <option value="3">Секция 4</option>
-                    <option value="3">Секция 5</option>
-                    <option value="3">Секция 6</option>
-                    <option value="3">Секция 7</option>
-                    <option value="3">Секция 8</option>
-                </select>
-            </div>
 
-            <div class="d-flex flex-column">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Все варианты
-                    </label>
-                </div>
 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                        Студия
-                    </label>
-                </div>
+{% block content2 %}
 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                        1 комнатная
-                    </label>
-                </div>
+    <div class="back_container">
 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                        2 комнатная
-                    </label>
-                </div>
+        <h2 style="text-align: center;height: 50px; margin-top: 20px;">FAQ</h2>
 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                        3 комнатная
-                    </label>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item text-center">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Де найкраще купити квартиру в Одесі?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Селище Котовського одне із найбільш населених районів міста, яке
+                        розвивається швидкими темпами.
+
+                        Житловий район «Сади Рів'єри», що розташований на селищі Котовського, біля ТРЦ «Рів'єра» - це
+                        чудова
+                        можливість придбати квартиру в новобудові за вигідною ціною.
+
+                        Ціни на квартири в новобудові на селищі Котовського стартують від 370 000 гривень.
+
+                        Близькість до моря нового району «Сади Рів'єра», стіни з червоної цегли та відокремлені квартали
+                        від
+                        проїжджої частини, роблять цей район одним із найекологічніших у місті.
+
+                        При цьому інфраструктура та транспорт розвинені на селищі Котовського дуже добре. Проектом також
+                        передбачено будівництво дитячого садка.
+
+                        Купити квартиру в Одесі в «Садах Рів'єри» зможе кожен – ціни дуже доступні, а якістю життя ви
+                        будете
+                        задоволені!
+                    </div>
                 </div>
             </div>
-
-
-            <div class="block">
-
-                <div class="title">Площадь:</div>
-                <label for="customRange1" class="form-label">22 - 79 кв. м.</label>
-                <input type="range" class="form-range" min="22" max="79" id="customRange1">
-
-                <div class="title">Этаж:</div>
-                <label for="customRange2" class="form-label">1 - 12</label>
-                <input type="range" class="form-range" min="1" max="12" id="customRange2">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Скільки коштують квартири у новому районі на селищі Котовського «Сади Рів'єри»?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Вартість квадратного метра у новому новобудові на селищі Котовського
+                        «Сади
+                        Рів'єри» залежить від термінів здачі секцій, способу оплати та площі квартири. Діапазон цін від
+                        499
+                        у. до 635 у.о. кв.м. Вибираючи квартиру у новому житловому районі «Сади Рів'єри» ви отримуєте
+                        новий
+                        рівень комфортного та безпечного життя в Одесі.
+                    </div>
+                </div>
             </div>
-            <div class="text-center" id='btn_show'>
-                <button class="btn btn-success btn-lg mt-4">Показать</button>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                        Як купити квартиру в розстрочку на Котовському?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Купити квартиру на виплат на селищі Котовського в житловому районі «Сади
+                        Рів'єри» дуже просто. Для цього вам необхідно звернутися до інформаційного відділу з паспортом
+                        та
+                        кодом. Купуючи квартиру на виплат, ви отримуєте масу переваг:
+
+
+                        1. Не потрібна застава, оскільки заставою є квартира.
+                        2. Не потрібна довідка про доходи.
+                        3. Ви можете вибирати зручний спосіб погашення розстрочки та сплатити всю суму, не чекаючи
+                        термінів
+                        закінчення договору.
+                        4. Початковий внесок під час оформлення розстрочки на квартиру від 10%.
+                        5. Розстрочку можна оформити до закінчення будівництва, а саме до 30 місяців.
+                    </div>
+                </div>
             </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                        Який відсоток при купівлі квартир у новобудові на Котовському?
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Початковий внесок при придбанні квартири на виплат становить від 10% до
+                        75%.
+                        Чим більший початковий внесок, тим менша переплата за розстрочення та сума щомісячного платежу.
+                        Наші
+                        менеджери інформаційного відділу завжди підберуть вам зручний варіант розстрочки за вашим
+                        запитом.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                        Де купити комерційну нерухомість на селищі Котовського?
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">На території житлового району «Сади Рів'єри» передбачені всі об'єкти
+                        комерційної нерухомості для повного задоволення вашого комфортного життя. На перших поверхах
+                        будинків будуть розташовані комерційні об'єкти. Серед них будуть: клініка сімейної медицини,
+                        продуктові супермаркети, салон краси, хімчистка, аптека, пекарня та кав'ярня, послуги нотаріуса,
+                        фітнес-центр, центр дитячого розвитку. Також передбачено будівництво окремого дитячого садка.
+
+                        В наявності є комерційні приміщення від 40 кв.м., вартістю від 800 у.о./кв.м.
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
-    </div>
-</div>
 
-
-    <div class="parallax-container">
-        <div class="parallax"><img src="{% static 'main/img/kv.jpg' %}"></div>
     </div>
 
-    <script src="{% static 'main/js/my.js' %}"></script>
-
-</body>
-</html>
+{% endblock %}
