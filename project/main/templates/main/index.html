@@ -3,254 +3,270 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{% block title %} {% endblock %}</title>
-  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
-  {% comment %} <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> {% endcomment %}
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    {% comment %}
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> {% endcomment %}
 
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-	<style>
-    {% comment %} {% static 'main/img/realtor.png' %} {% endcomment %}
-	</style>
+    <style>
+        {% comment %} {% static 'main/img/realtor.png' %} {% endcomment %}
+    </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark fixed-top" style="padding-left: 0.3cm; padding-right: 0.3cm;">
+<nav class="navbar navbar-expand-lg bg-dark fixed-top" style="padding-left: 0.3cm; padding-right: 0.3cm;">
     <a class="navbar-brand" href="{% url 'index' %}">
-        <img src="{% static 'main/img/realtor.png' %}" alt="Логотип" class="img-fluid" style="max-height: 70px; max-width: 150px;">
+        <img src="{% static 'main/img/realtor.png' %}" alt="Логотип" class="img-fluid"
+             style="max-height: 70px; max-width: 150px;">
     </a>
     <div class="container-fluid">
-        
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <li class="nav-item dropdown" id='pokypka'>
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
                         Покупка квартиры
                     </a>
-                    <ul class="dropdown-menu style="z-index: 9999;">
+                    <ul class="dropdown-menu style=">
+                        ">
                         <li><a class="dropdown-item" href="#">Жилой район "Сады Ривьеры"</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown" id='kom_nedv'>
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
                         Коммерческая недвижимость
                     </a>
-                    <ul class="dropdown-menu style="z-index: 9999;">
+                    <ul class="dropdown-menu style=">
+                        ">
                         <li><a class="dropdown-item" href="#">ФАСАДНЫЕ ПОМЕЩЕНИЯ</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li><a class="dropdown-item" href="#">КЛАДОВЫЕ</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown" id='rent'>
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
                         Аренда
                     </a>
-                    <ul class="dropdown-menu style="z-index: 9999;">
+                    <ul class="dropdown-menu style=">
+                        ">
                         <li><a class="dropdown-item" href="#">КВАРТИРЫ</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li><a class="dropdown-item" href="#">КЛАДОВЫЕ</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li><a class="dropdown-item" href="#">КОММЕРЧЕСКИЕ ПОМЕЩЕНИЯ</a></li>
                     </ul>
                 </li>
 
-          <li class="nav-item dropdown" id='oformlenie'>
-            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Оформление документов
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">1</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">2</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">3</a></li>
+                <li class="nav-item dropdown" id='oformlenie'>
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Оформление документов
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                    </ul>
+                </li>
+
+                <a class="navbar-brand text-white" id='number' href="#">+380972831340</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <li class="nav-item" id='kn'>
+                    <button type="button" class="btn btn-success">Заказать звонок</button>
+                </li>
             </ul>
-          </li>
 
-          <a class="navbar-brand text-white" id='number' href="#">+380972831340</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-          <li class="nav-item" id='kn'>
-            <button type="button" class="btn btn-success">Заказать звонок</button>
-          </li>
-        </ul>
-        
-      </div>
+        </div>
     </div>
-  </nav>
-
-    <!-- Add parallax sections -->
-  
-    {% comment %} <div class="parallax-container" style="height: 600px;">
-        <div class="parallax"><img src="{% static 'main/img/first.jpg' %}"></div>  {% endcomment %}
-      
+</nav>
 
 
-        
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item" data-bs-interval="10000">
-              <img src="{% static 'main/img/rent.jpg' %}" class="d-block w-100" width="100%" height="600"alt="...">
-              <div class="carousel-caption d-none d-md-block">
+
+
+
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class=""
+                aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
+                class=""></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"
+                class="active" aria-current="true"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item" data-bs-interval="10000">
+            <img src="{% static 'main/img/rent.jpg' %}" class="d-block w-100" width="100%" height="600" alt="...">
+            <div class="carousel-caption d-none d-md-block">
                 <h5>Коммерческие обЬекты</h5>
                 <p>У нас есть варианты именно для вас.</p>
-              </div>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              
-              <img src="{% static 'main/img/com_nedv.jpg' %}" class="d-block w-100" width="100%" height="600" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+
+            <img src="{% static 'main/img/com_nedv.jpg' %}" class="d-block w-100" width="100%" height="600" alt="...">
+            <div class="carousel-caption d-none d-md-block">
                 <h5>Аренда</h5>
                 <p>Тут вы можете арендовать помещение под ваши нужды</p>
-              </div>
             </div>
-            <div class="carousel-item active">
-              
-              <img src="{% static 'main/img/apart.jpg' %}" class="d-block w-100" width="100%" height="600" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+        </div>
+        <div class="carousel-item active">
+
+            <img src="{% static 'main/img/apart.jpg' %}" class="d-block w-100" width="100%" height="600" alt="...">
+            <div class="carousel-caption d-none d-md-block">
                 <h5>Квартиры</h5>
                 <p>Димон лох.</p>
-              </div>
             </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
-      </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
 
 
+<div class="black-background">
+    <div class="section">
+        <img src="{% static 'main/img/choose.png' %}" alt="Логотип" class="img-fluid"
+             style="height: 150px; width:100%;">
 
+        <h2 class="header text-center" style="height: 80px;">СКОЛЬКО КОМНАТ У ТВОЕЙ МЕЧТЫ?</h2>
 
-      <div class="black-background">
-        <div class="section">
-            <img src="{% static 'main/img/choose.png' %}" alt="Логотип" class="img-fluid" style="height: 150px; width:100%;">
-        
-          <h2 class="header text-center" style="height: 80px;">СКОЛЬКО КОМНАТ У ТВОЕЙ МЕЧТЫ?</h2>
-
-          <div class="global-flats__item">
+        <div class="global-flats__item">
             <img src="{% static 'main/img/1.jpg' %}" alt="1 комнатная" class="global-flats__img">
             <h2>1 КОМНАТНЫЕ</h2>
             <p>от 18 396 у.е.</p>
             <button class="green-button">Подобрать квартиру</button>
-          </div>
+        </div>
 
-          <div class="global-flats__item">
+        <div class="global-flats__item">
             <img src="{% static 'main/img/2.jpg' %}" alt="2 комнатная" class="global-flats__img">
             <h2>2 КОМНАТНЫЕ</h2>
             <p>от 26 336 у.е</p>
             <button class="green-button">Подобрать квартиру</button>
-          </div>
+        </div>
 
-          <div class="global-flats__item">
+        <div class="global-flats__item">
             <img src="{% static 'main/img/3.jpg' %}" alt="3 комнатная" class="global-flats__img">
             <h2>3 КОМНАТНЫЕ</h2>
             <p>от 36 314 у.е.</p>
             <button class="green-button">Подобрать квартиру</button>
-          </div>
-      </div>
+        </div>
+    </div>
 
 
-
-      
-      <div class="container" style="height: 250px;">
+    <div class="container" style="height: 250px;">
         <h2>ВЫБОР КВАРТИРЫ ПО ПАРАМЕТРАМ</h2>
         <div class="blocks">
-      
-          
-          <div class="block">
-            <div class="title">Очередь:</div>
+            <div class="block">
+                <div class="title">Очередь:</div>
 
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Все очереди</option>
-              <option value="1">Секция 1</option>
-              <option value="2">Секция 2</option>
-              <option value="3">Секция 3</option>
-              <option value="3">Секция 4</option>
-              <option value="3">Секция 5</option>
-              <option value="3">Секция 6</option>
-              <option value="3">Секция 7</option>
-              <option value="3">Секция 8</option>
-            </select>
-          </div>
-      
-          <div class="d-flex flex-column">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Все варианты
-              </label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Все очереди</option>
+                    <option value="1">Секция 1</option>
+                    <option value="2">Секция 2</option>
+                    <option value="3">Секция 3</option>
+                    <option value="3">Секция 4</option>
+                    <option value="3">Секция 5</option>
+                    <option value="3">Секция 6</option>
+                    <option value="3">Секция 7</option>
+                    <option value="3">Секция 8</option>
+                </select>
             </div>
-          
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label" for="flexCheckChecked">
-                Студия
-              </label>
+
+            <div class="d-flex flex-column">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Все варианты
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Студия
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        1 комнатная
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        2 комнатная
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        3 комнатная
+                    </label>
+                </div>
             </div>
-          
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label" for="flexCheckChecked">
-                1 комнатная
-              </label>
+
+
+            <div class="block">
+
+                <div class="title">Площадь:</div>
+                <label for="customRange1" class="form-label">22 - 79 кв. м.</label>
+                <input type="range" class="form-range" min="22" max="79" id="customRange1">
+
+                <div class="title">Этаж:</div>
+                <label for="customRange2" class="form-label">1 - 12</label>
+                <input type="range" class="form-range" min="1" max="12" id="customRange2">
             </div>
-          
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label" for="flexCheckChecked">
-                2 комнатная
-              </label>
+            <div class="text-center" id='btn_show'>
+                <button class="btn btn-success btn-lg mt-4">Показать</button>
             </div>
-          
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label" for="flexCheckChecked">
-                3 комнатная
-              </label>
-            </div>
-          </div>
-          
-      
-          <div class="block">
-            
-              <div class="title">Площадь:</div>
-              <label for="customRange1" class="form-label">22 - 79 кв. м.</label> 
-              <input type="range" class="form-range" min="22" max="79" id="customRange1">
-          
-              <div class="title">Этаж:</div>
-              <label for="customRange2" class="form-label">1 - 12</label> 
-              <input type="range" class="form-range" min="1" max="12" id="customRange2">
-          </div>
-          <div class="text-center" id='btn_show'>
-            <button class="btn btn-success btn-lg mt-4">Показать</button>
-          </div>
         </div>
-      </div>
+    </div>
 
 
-
-
-      <div class="parallax-container">
+    <div class="parallax-container">
         <div class="parallax"><img src="{% static 'main/img/kv.jpg' %}"></div>
-      </div>
+    </div>
 
-    <script src="{% static 'main/js/my.js'%}"></script>
+    <script src="{% static 'main/js/my.js' %}"></script>
+
 </body>
 </html>
