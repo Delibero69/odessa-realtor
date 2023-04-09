@@ -2,7 +2,9 @@ from django.shortcuts import render
 from .forms import ContactForm
 import asyncio
 from telegram import Bot
-from telegram.ext import Updater, MessageHandler
+
+
+
 from django.conf import settings
 loop = asyncio.get_event_loop()
 
