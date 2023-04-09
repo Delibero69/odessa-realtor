@@ -1,7 +1,13 @@
 
 
 
+function showDropdown(id) {
+    document.getElementById(id + '-dropdown').classList.add('show');
+  }
 
+  function hideDropdown(id) {
+    document.getElementById(id + '-dropdown').classList.remove('show');
+  }
 
 
 $(document).ready(function(){
