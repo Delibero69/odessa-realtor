@@ -87,10 +87,10 @@
 <body>
   <form method="post" action="{% url 'call' %}">
     {% csrf_token %}
-      <label for="{{ form.name.id_for_label }}">Имя</label>
-      <input type="text" name="{{ form.name.html_name }}" id="{{ form.name.auto_id }}" value="{{ form.name.value|default:'' }}" placeholder="Введите имя" maxlength="{{ form.name.field.max_length }}" required>
-      <label for="{{ form.phone_number.id_for_label }}">Номер телефона</label>
-      <input type="text" name="{{ form.phone_number.html_name }}" id="{{ form.phone_number.auto_id }}" value="{{ form.phone_number.value|default:'' }}" placeholder="Введите номер телефона" maxlength="{{ form.phone_number.field.max_length }}" required>
+      <label for="{{ form.name.id_for_label }}">Ім'я</label>
+      <input type="text" name="{{ form.name.html_name }}" id="{{ form.name.auto_id }}" value="{{ form.name.value|default:'' }}" placeholder="Введіть ім'я" maxlength="{{ form.name.field.max_length }}" required>
+      <label for="{{ form.phone_number.id_for_label }}">Номер телефону</label>
+      <input type="text" name="{{ form.phone_number.html_name }}" id="{{ form.phone_number.auto_id }}" value="{{ form.phone_number.value|default:'' }}" placeholder="Введіть номер телефону" maxlength="{{ form.phone_number.field.max_length }}" required>
 
     <button type="submit">Отправить</button>
   </form>
