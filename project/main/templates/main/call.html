@@ -1,14 +1,98 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Форма отправки</title>
+  <title>Моя красивая форма</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Общие стили для формы */
+    body {
+      margin: 0; /* Удаление отступов у body */
+      padding: 0; /* Удаление отступов у body */
+      background: url('https://odessa.company/uploads/images/complex/5bc9a7edc13f3.jpg') no-repeat center center fixed; /* Добавление фонового изображения на всю страницу */
+      background-size: cover; /* Растягивание изображения на всю страницу */
+      font-family: Arial, sans-serif; /* Шрифт по умолчанию для всей страницы */
+    }
+
+  form {
+  /* Удаление маргина и паддинга */
+  margin: 0;
+  padding: 0;
+  /* Добавление стилей для центрирования по горизонтали и вертикали */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Остальные стили формы */
+  width: 90%; /* Изменение ширины формы */
+  max-width: 500px; /* Изменение максимальной ширины формы */
+  height: 250px; /* Изменение высоты формы */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+}
+
+
+    /* Стили для текстовых полей и меток */
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    /* Стили для кнопки отправки */
+    form button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    form button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    /* Медиа-запросы для оптимизации на различных устройствах */
+    @media (max-width: 767px) {
+      /* Стили для мобильных устройств */
+      form {
+        padding: 10px;
+        margin-top: 50px; /* Сдвиг формы относительно верхнего края на мобильных устройствах */
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      /* Стили для планшетов */
+      form {
+        max-width: 600px;
+      }
+    }
+  </style>
 </head>
 <body>
-<h1>Contact Us</h1>
-<form method="post" action="{% url 'call' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Send</button>
-</form>
+<body>
+  <form method="post" action="{% url 'call' %}">
+    {% csrf_token %}
+      <label for="{{ form.name.id_for_label }}">Имя</label>
+      <input type="text" name="{{ form.name.html_name }}" id="{{ form.name.auto_id }}" value="{{ form.name.value|default:'' }}" placeholder="Введите имя" maxlength="{{ form.name.field.max_length }}" required>
+      <label for="{{ form.phone_number.id_for_label }}">Номер телефона</label>
+      <input type="text" name="{{ form.phone_number.html_name }}" id="{{ form.phone_number.auto_id }}" value="{{ form.phone_number.value|default:'' }}" placeholder="Введите номер телефона" maxlength="{{ form.phone_number.field.max_length }}" required>
+
+    <button type="submit">Отправить</button>
+  </form>
 </body>
 </html>
