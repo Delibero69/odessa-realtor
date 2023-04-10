@@ -19,10 +19,3 @@ if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
 
-# urlpatterns = [
-#     path('', index, name='index'),
-#     path('contact/', contact, name='contact'),
-#     path('about/', about, name='about'),
-#     path('order_a_call/', call, name='call'),
-#     path('apartmentsearch/', apartmentsearch, name='apartmentsearch'),
-# ]
