@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import ContactForm
+from .forms import ContactForm,ContactFormsTwo
 import asyncio
 from telegram import Bot
 
@@ -38,7 +38,32 @@ def call(request):
         form = ContactForm()
         return render(request, 'main/call.html', {'form': form})
 
+
+def call2(request):
+    if request.method == 'POST':
+        form = ContactFormsTwo(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            phone_number = form.cleaned_data['phone_number']
+            content = form.cleaned_data['content']
+            # Отправка данных в Telegram
+            message = f'Name: {name}\nPhone Number: {phone_number}\n\n{content}'
+            async def send_telegram_message():
+                # Замените на ваш токен бота
+                bot = Bot(token='6160065485:AAFJ7j6U7xApViYEDhBpEB2iCIEOo8vB3Bc')
+                chat_id = '-1001920393262'
+                await bot.send_message(chat_id=chat_id, text=message)
+            loop.run_until_complete(send_telegram_message())
+
+            return render(request, 'main/index.html')
+        else:
+            return render(request, 'main/index.html', {'form': form})
+    else:
+        form = ContactFormsTwo()
+        return render(request, 'main/index.html', {'form': form})
+
+
+
 def show_apartment(request):
     return render(request, 'main/show_apartment.html', )
-
 
