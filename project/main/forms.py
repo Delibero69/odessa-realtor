@@ -8,4 +8,4 @@ class ContactForm(forms.Form):
 class ContactFormsTwo(forms.Form):
     name = forms.CharField(max_length=100)
     phone_number = forms.CharField(max_length=15)
-    content = forms.CharField(max_length=256)
+    content = forms.CharField(max_length=255)
