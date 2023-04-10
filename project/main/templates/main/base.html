@@ -220,31 +220,30 @@
 
 
 <div class="back_container2">
-   <h2 style="text-align: center;height: 60px;margin-top: 20px; ">ПОСТАВТЕ ПИТАННЯ І МИ З РАДІСТЮ ВАМ ДОПОМОЖЕМО</h2>
+    <h2 style="text-align: center;height: 60px;margin-top: 20px; ">ПОСТАВТЕ ПИТАННЯ І МИ З РАДІСТЮ ВАМ ДОПОМОЖЕМО</h2>
 
     <form method="post" action="{% url 'call2' %}">
-    {% csrf_token %}
-    <label for="{{ form.name.id_for_label }}">Ім'я</label>
-    <input type="text" name="{{ form.name.html_name }}" id="{{ form.name.auto_id }}"
-           value="{{ form.name.value|default:'' }}" placeholder="Введіть ім'я"
-           maxlength="{{ form.name.field.max_length }}" required>
+        {% csrf_token %}
+        <label for="{{ form.name.id_for_label }}">Ім'я</label>
+        <input type="text" name="{{ form.name.html_name }}" id="{{ form.name.auto_id }}"
+               value="{{ form.name.value|default:'' }}" placeholder="Введіть ім'я"
+               maxlength="{{ form.name.field.max_length }}" required>
 
-    <label for="{{ form.phone_number.id_for_label }}">Номер телефону</label>
-    <input type="text" name="{{ form.phone_number.html_name }}" id="{{ form.phone_number.auto_id }}"
-           value="{{ form.phone_number.value|default:'' }}" placeholder="Введіть номер телефону"
-           maxlength="{{ form.phone_number.field.max_length }}" required>
+        <label for="{{ form.phone_number.id_for_label }}">Номер телефону</label>
+        <input type="text" name="{{ form.phone_number.html_name }}" id="{{ form.phone_number.auto_id }}"
+               value="{{ form.phone_number.value|default:'' }}" placeholder="Введіть номер телефону"
+               maxlength="{{ form.phone_number.field.max_length }}" required>
 
-    <label for="{{ form.content.id_for_label }}">ПОСТАВТЕ ПИТАННЯ І МИ З
+        <label for="{{ form.content.id_for_label }}">ПОСТАВТЕ ПИТАННЯ І МИ З
             РАДІСТЮ ВАМ ДОПОМОЖЕМО</label>
-    <input type="text" style="height: 145px; vertical-align: top;" name="{{ form.content.html_name }}" id="{{ form.content.auto_id }}"
-   value="{{ form.content.value|default:'' }}" placeholder="Ваше запитання"
-   maxlength="{{ form.content.field.max_length }}" required/>
+        <textarea style="height: 100px; resize: vertical; overflow-y: auto;" name="{{ form.content.html_name }}"
+                  id="{{ form.content.auto_id }}" placeholder="Ваше запитання"
+                  maxlength="{{ form.content.field.max_length }}"
+                  required>{{ form.content.value|default:'' }}</textarea>
 
 
-
-
-    <button type="submit">Отправить</button>
-</form>
+        <button type="submit">Отправить</button>
+    </form>
 </div>
 
 
