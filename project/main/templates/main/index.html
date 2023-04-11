@@ -49,9 +49,8 @@
 
     <div class="black-background">
     <div class="section">
-{#        <img src="{% static 'main/img/choose.png' %}" alt="Логотип" class="img-fluid"#}
-{#             style="height: 150px; width:100%;">#}
-        <h2 class="header text-center bg-dark" style="height: 150px; width:100%; margin-top: -5px; color: white; display: flex; justify-content: center; align-items: center;">ОБЕРИ СВОЮ МРІЮ</h2>
+        <img src="{% static 'main/img/choose.png' %}" alt="Логотип" class="img-fluid"
+             style="height: 150px; width:100%;">
 
         <h2 class="header text-center" style="height: 80px;margin-top: 20px;">СКІЛЬКИ КІМНАТ У ТВОЇЙ МРІЇ?</h2>
 
@@ -76,7 +75,7 @@
             <button class="green-button">Підібрати квартиру</button>
         </div>
     </div>
-    </div>
+
 
 {% endblock %}
 
@@ -86,29 +85,122 @@
 
 {% block content2 %}
 
-{#<div class="back_container2">#}
-{#        <h2 style="text-align: center;height: 60px;margin-top: 20px; ">ПОСТАВТЕ ПИТАННЯ І МИ З#}
-{#            РАДІСТЮ ВАМ ДОПОМОЖЕМО</h2>#}
-{#        <div class="mb-3">#}
-{#            <label for="exampleFormControlInput1" class="form-label">Ваше имя</label>#}
-{#            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">#}
-{#        </div>#}
-{#        <div class="mb-3">#}
-{#            <label for="exampleFormControlInput1" class="form-label">Email address</label>#}
-{#            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">#}
-{#        </div>#}
-{#        <div class="mb-3">#}
-{#            <label for="exampleFormControlInput1" class="form-label">Телефон</label>#}
-{#            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+380000000000">#}
-{#        </div>#}
-{#        <div class="mb-3">#}
-{#            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>#}
-{#            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>#}
-{#        </div>#}
-{#        <div class="btn-container">#}
-{#            <a type="button" class="btn btn-success" href="{% url 'call' %}">Надiслати</a>#}
-{#        </div>#}
-{##}
-{#    </div>#}
+    <div class="back_container">
+
+        <h2 style="text-align: center;height: 50px; margin-top: 20px;">FAQ</h2>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item text-center">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Де найкраще купити квартиру в Одесі?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Селище Котовського одне із найбільш населених районів міста, яке
+                        розвивається швидкими темпами. Житловий район «Сади Рів'єри», що розташований на селищі
+                        Котовського, біля ТРЦ «Рів'єра» - це
+                        чудова можливість придбати квартиру в новобудові за вигідною ціною. Ціни на квартири в
+                        новобудові на селищі Котовського стартують від 370 000 гривень. Близькість до моря нового району
+                        «Сади Рів'єра», стіни з червоної цегли та відокремлені квартали від
+                        проїжджої частини, роблять цей район одним із найекологічніших у місті. При цьому інфраструктура
+                        та транспорт розвинені на селищі Котовського дуже добре. Проектом також передбачено будівництво
+                        дитячого садка. Купити квартиру в Одесі в «Садах Рів'єри» зможе кожен – ціни дуже доступні, а
+                        якістю життя ви будете задоволені!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Скільки коштують квартири у новому районі на селищі Котовського «Сади Рів'єри»?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Вартість квадратного метра у новому новобудові на селищі Котовського
+                        «Сади
+                        Рів'єри» залежить від термінів здачі секцій, способу оплати та площі квартири. Діапазон цін від
+                        499
+                        у. до 635 у.о. кв.м. Вибираючи квартиру у новому житловому районі «Сади Рів'єри» ви отримуєте
+                        новий
+                        рівень комфортного та безпечного життя в Одесі.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                        Як купити квартиру в розстрочку на Котовському?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Купити квартиру на виплат на селищі Котовського в житловому районі «Сади
+                        Рів'єри» дуже просто. Для цього вам необхідно звернутися до інформаційного відділу з паспортом
+                        та
+                        кодом. Купуючи квартиру на виплат, ви отримуєте масу переваг:
+
+                        <ol>
+                            <li>Не потрібна застава, оскільки заставою є квартира.</li>
+                            <li>Не потрібна довідка про доходи.</li>
+                            <li>Ви можете вибирати зручний спосіб погашення розстрочки та сплатити всю суму, не чекаючи
+                                термінів закінчення договору.
+                            </li>
+                            <li>Початковий внесок під час оформлення розстрочки на квартиру від 10%.</li>
+                            <li>Розстрочку можна оформити до закінчення будівництва, а саме до 30 місяців.</li>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                        Який відсоток при купівлі квартир у новобудові на Котовському?
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Початковий внесок при придбанні квартири на виплат становить від 10% до
+                        75%.
+                        Чим більший початковий внесок, тим менша переплата за розстрочення та сума щомісячного платежу.
+                        Наші
+                        менеджери інформаційного відділу завжди підберуть вам зручний варіант розстрочки за вашим
+                        запитом.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                        Де купити комерційну нерухомість на селищі Котовського?
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">На території житлового району «Сади Рів'єри» передбачені всі об'єкти
+                        комерційної нерухомості для повного задоволення вашого комфортного життя. На перших поверхах
+                        будинків будуть розташовані комерційні об'єкти. Серед них будуть: клініка сімейної медицини,
+                        продуктові супермаркети, салон краси, хімчистка, аптека, пекарня та кав'ярня, послуги нотаріуса,
+                        фітнес-центр, центр дитячого розвитку. Також передбачено будівництво окремого дитячого садка.
+
+                        В наявності є комерційні приміщення від 40 кв.м., вартістю від 800 у.о./кв.м.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
 
 {% endblock %}
