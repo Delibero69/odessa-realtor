@@ -1,15 +1,26 @@
 from django.db import models
 import logging
 
+
+class Category(models.Model):
+    name = models.CharField(max_length=128, blank=True)
+    description = models.TextField(null=True, blank=True)
+    class Meta:
+        verbose_name = 'категория'
+        verbose_name_plural = 'категории'
+    def __str__(self):
+        return self.name
+
+
 # Create your models here.
 class building(models.Model):
-    title = models.CharField(max_length=255)
-    etaj = models.CharField(max_length=255)
-    sekciya = models.CharField(max_length=255)
-    ploshad = models.CharField(max_length=255)
-    price = models.CharField(max_length=255)
-    photo = models.ImageField(upload_to='photos/%Y/%m/%d/')
-    is_published = models.BooleanField(default=True)
+    title = models.CharField(max_length=255, blank=True)
+    etaj = models.CharField(max_length=255, blank=True)
+    sekciya = models.CharField(max_length=255, blank=True)
+    ploshad = models.CharField(max_length=255, blank=True)
+    price = models.CharField(max_length=255, blank=True)
+    photo = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
+    category = models.ForeignKey(to=Category, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
