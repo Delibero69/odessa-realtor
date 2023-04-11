@@ -219,62 +219,7 @@
 {% block content2 %} {% endblock %}
 
 
-<div class="back_container2">
-    <h2 style="text-align: center;height: 60px;margin-top: 20px;">ПОСТАВТЕ ПИТАННЯ І МИ З РАДІСТЮ ВАМ ДОПОМОЖЕМО</h2>
 
-    <form method="post" action="{% url 'call2' %}" id="my-form">
-        {% csrf_token %}
-        <label for="{{ form2.name.id_for_label }}">Ім'я</label>
-        <input type="text" name="{{ form2.name.html_name }}" id="{{ form2.name.auto_id }}"
-               value="{{ form2.name.value|default:'' }}" placeholder="Введіть ім'я"
-               maxlength="{{ form2.name.field.max_length }}" required>
-
-        <label for="{{ form2.phone_number.id_for_label }}">Номер телефону</label>
-        <input type="text" name="{{ form2.phone_number.html_name }}" id="{{ form2.phone_number.auto_id }}"
-               value="{{ form2.phone_number.value|default:'' }}" placeholder="Введіть номер телефону"
-               maxlength="{{ form2.phone_number.field.max_length }}" required>
-
-        <label for="{{ form2.content.id_for_label }}">ПОСТАВТЕ ПИТАННЯ І МИ З
-            РАДІСТЮ ВАМ ДОПОМОЖЕМО</label>
-        <textarea style="height: 100px; resize: vertical; overflow-y: auto;" name="{{ form2.content.html_name }}"
-                  id="{{ form2.content.auto_id }}" placeholder="Ваше запитання"
-                  maxlength="{{ form2.content.field.max_length }}"
-                  required>{{ form2.content.value|default:'' }}</textarea>
-
-
-        <button type="submit">Отправить</button>
-    </form>
-</div>
-
-
-
-
-
-{#<div class="back_container2">#}
-{#    <h2 style="text-align: center;height: 60px;margin-top: 20px; ">ПОСТАВТЕ ПИТАННЯ І МИ З#}
-{#        РАДІСТЮ ВАМ ДОПОМОЖЕМО</h2>#}
-{#    <div class="mb-3">#}
-{#        <label for="exampleFormControlInput1" class="form-label">Ваше имя</label>#}
-{#        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">#}
-{#    </div>#}
-{#    <div class="mb-3">#}
-{#        <label for="exampleFormControlInput1" class="form-label">Email address</label>#}
-{#        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">#}
-{#    </div>#}
-{#    <div class="mb-3">#}
-{#        <label for="exampleFormControlInput1" class="form-label">Телефон</label>#}
-{#        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+380000000000">#}
-{#    </div>#}
-{#    <div class="mb-3">#}
-{#        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>#}
-{#        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>#}
-{#    </div>#}
-{#    <div class="btn-container">#}
-{#        <a type="button" class="btn btn-success" href="{% url 'call' %}">Надiслати</a>#}
-{#    </div>#}
-{#</div>#}
-
-<div id="my-div"></div>
 
 
 
@@ -396,6 +341,66 @@
 </div>
 
 </div>
+
+
+<div id="my-div"></div>
+
+<div class="back_container2">
+    <h2 style="text-align: center;height: 60px;margin-top: 20px;">ПОСТАВТЕ ПИТАННЯ І МИ З РАДІСТЮ ВАМ ДОПОМОЖЕМО</h2>
+
+    <form method="post" action="{% url 'call2' %}" id="my-form">
+        {% csrf_token %}
+        <label for="{{ form2.name.id_for_label }}">Ім'я</label>
+        <input type="text" name="{{ form2.name.html_name }}" id="{{ form2.name.auto_id }}"
+               value="{{ form2.name.value|default:'' }}" placeholder="Введіть ім'я"
+               maxlength="{{ form2.name.field.max_length }}" required>
+
+        <label for="{{ form2.phone_number.id_for_label }}">Номер телефону</label>
+        <input type="text" name="{{ form2.phone_number.html_name }}" id="{{ form2.phone_number.auto_id }}"
+               value="{{ form2.phone_number.value|default:'' }}" placeholder="Введіть номер телефону"
+               maxlength="{{ form2.phone_number.field.max_length }}" required>
+
+        <label for="{{ form2.content.id_for_label }}">ПОСТАВТЕ ПИТАННЯ І МИ З
+            РАДІСТЮ ВАМ ДОПОМОЖЕМО</label>
+        <textarea style="height: 100px; resize: vertical; overflow-y: auto;" name="{{ form2.content.html_name }}"
+                  id="{{ form2.content.auto_id }}" placeholder="Ваше запитання"
+                  maxlength="{{ form2.content.field.max_length }}"
+                  required>{{ form2.content.value|default:'' }}</textarea>
+
+
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+
+
+
+
+
+{#<div class="back_container2">#}
+{#    <h2 style="text-align: center;height: 60px;margin-top: 20px; ">ПОСТАВТЕ ПИТАННЯ І МИ З#}
+{#        РАДІСТЮ ВАМ ДОПОМОЖЕМО</h2>#}
+{#    <div class="mb-3">#}
+{#        <label for="exampleFormControlInput1" class="form-label">Ваше имя</label>#}
+{#        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">#}
+{#    </div>#}
+{#    <div class="mb-3">#}
+{#        <label for="exampleFormControlInput1" class="form-label">Email address</label>#}
+{#        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">#}
+{#    </div>#}
+{#    <div class="mb-3">#}
+{#        <label for="exampleFormControlInput1" class="form-label">Телефон</label>#}
+{#        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+380000000000">#}
+{#    </div>#}
+{#    <div class="mb-3">#}
+{#        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>#}
+{#        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>#}
+{#    </div>#}
+{#    <div class="btn-container">#}
+{#        <a type="button" class="btn btn-success" href="{% url 'call' %}">Надiслати</a>#}
+{#    </div>#}
+{#</div>#}
+
+
 
 
 <script src="{% static 'main/js/my.js' %}"></script>
