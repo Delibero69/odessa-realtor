@@ -21,6 +21,10 @@ class building(models.Model):
     ploshad = models.CharField(max_length=255, blank=True)
     price = models.CharField(max_length=255, blank=True)
     photo = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
+
+    bathroom = models.CharField(max_length=255, blank=True)
+    kitchen = models.CharField(max_length=255, blank=True)
+    paradnaya = models.CharField(max_length=255, blank=True)
     category = models.ForeignKey(to=Category, on_delete=models.CASCADE)
 
     def __str__(self):
