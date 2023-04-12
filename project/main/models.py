@@ -13,8 +13,8 @@ class Category(models.Model):
 
 
 # Create your models here.
-class building(models.Model):
-    title = models.CharField(max_length=255, blank=True)
+class Building(models.Model):
+    name = models.CharField(max_length=255, blank=True)
     rooms = models.CharField(max_length=255, blank=True)
     etaj = models.CharField(max_length=255, blank=True)
     sekciya = models.CharField(max_length=255, blank=True)
