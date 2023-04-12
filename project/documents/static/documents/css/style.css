@@ -22,8 +22,8 @@
 
 .text {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 70%;
+    left: 30%;
     transform: translate(-50%, -50%);
     width: 30%;
     padding: 20px;
@@ -56,4 +56,7 @@
 
 .text .btn:hover {
     background-color: #0056b3;
+}
+.description{
+    font-size: 100px;
 }
