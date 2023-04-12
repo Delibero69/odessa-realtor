@@ -1,33 +1,54 @@
-/* Ваш код CSS */
-.photo {
-  display: block; /* Устанавливаем свойство display в block, чтобы изображение отображалось как блочный элемент */
-  margin: 0 auto; /* Устанавливаем автоматические отступы слева и справа, чтобы изображение было выровнено по центру по горизонтали */
-  max-width: 100%; /* Устанавливаем максимальную ширину изображения в 120% от родительского элемента, чтобы оно было чуть шире */
-  height: 85%; /* Устанавливаем высоту изображения в auto, чтобы она масштабировалась пропорционально */
+.container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    top: 11%;
 }
-  .long-bar {
-      width: 100%; /* Устанавливаем ширину полоски на 100% от родительского элемента */
-      height: 20px; /* Устанавливаем высоту полоски на 20 пикселей */
-      background-color: yellow; /* Устанавливаем цвет фона полоски */
-    }
-      .container {
-            max-width: 300px;
-            margin: 0 auto;
-            background-color: transparent;
-            padding: 20px;
-        }
 
-        .text {
-            background-color: transparent;
-            color: black;
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 20px; /* Добавлен отступ снизу */
-        }
+.photo {
+    /*display: block;*/
+    /*max-width: 100%;*/
+    /*left: 0%;*/ /* удалить или закомментировать эту строку */
+    width : 100%; /* изменить "weight" на "width" и задать значение в процентах или другой единице измерения */
+    height: 80%; /* увеличиваем высоту фото до 80% */
+}
 
-        .line {
-            background-color: black;
-            height: 5px;
-            margin-top: 10%;
-            margin-bottom: 20px;
-        }
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.text .btn:hover {
+    background-color: #0056b3;
+}
