@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.urls import path
-from project.main.views import *
+from main.views import *
+from documents.views import *
 
 
 
@@ -13,6 +14,7 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
+    path('documents', include('documents.urls')),
 
 ]
 
