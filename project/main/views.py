@@ -3,6 +3,7 @@ from .forms import ContactForm,ContactForm2
 import asyncio
 from telegram import Bot
 
+from .models import *
 
 
 from django.conf import settings
@@ -90,10 +91,22 @@ def call2(request):
 
 
 
+def show_apartment(request, category_id=None):
+
+    apartment = Building.objects.all()
+    context = {'apartment': apartment,
+               'title':"Купить квартиру"
+               }
+    return render(request, 'main/show_apartment.html', context)
 
 
 
+# def show_apartment(request):
+#     return render(request, 'main/show_apartment.html', )
 
-def show_apartment(request):
-    return render(request, 'main/show_apartment.html', )
-
+# def show_apartment(request, category_id=None):
+#     apartment = Building.objects.get(category_id=category_id)
+#     context = {'apartment': apartment,
+#                'title':"Купить Квартиру"
+#                }
+#     return render(request, 'main/show_apartment.html', context)
