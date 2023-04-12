@@ -1,18 +1,23 @@
 .container {
-    position: relative;
+    /*position: relative;*/
     max-width: 1000px;
-    margin: 0 auto;
     padding: 20px;
     top: 11%;
 }
-
-.photo {
-    /*display: block;*/
-    /*max-width: 100%;*/
-    /*left: 0%;*/ /* удалить или закомментировать эту строку */
-    width : 100%; /* изменить "weight" на "width" и задать значение в процентах или другой единице измерения */
-    height: 80%; /* увеличиваем высоту фото до 80% */
+#backgr{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
+/*.photo {*/
+/*    !*display: block;*!*/
+/*    !*max-width: 100%;*!*/
+/*    !*left: 0%;*! !* удалить или закомментировать эту строку *!*/
+/*    width : 100%; !* изменить "weight" на "width" и задать значение в процентах или другой единице измерения *!*/
+/*    height: 80%; !* увеличиваем высоту фото до 80% *!*/
+/*}*/
 
 
 .text {
