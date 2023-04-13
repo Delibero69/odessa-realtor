@@ -8,14 +8,21 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 90%;
   width: 100%;
 }
+/*.photo {*/
+/*    !*display: block;*!*/
+/*    !*max-width: 100%;*!*/
+/*    !*left: 0%;*! !* удалить или закомментировать эту строку *!*/
+/*    width : 100%; !* изменить "weight" на "width" и задать значение в процентах или другой единице измерения *!*/
+/*    height: 80%; !* увеличиваем высоту фото до 80% *!*/
+/*}*/
 
 
 .text {
     position: absolute;
-    top: 70%;
+    top: 55%;
     left: 30%;
     transform: translate(-50%, -50%);
     width: 30%;
@@ -51,5 +58,5 @@
     background-color: #0056b3;
 }
 .description{
-    font-size: 100px;
+    font-size: 20px;
 }
