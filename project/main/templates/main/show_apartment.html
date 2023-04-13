@@ -14,9 +14,11 @@
         <div class="col-md-4">
 
             <div class="card mx-2 my-2" style="width: 20rem;">
-
-                    <img src="{{ p.photo }}">
-
+                    {%  if p.photo %}
+                        <img src="{{ p.photo.url }}">
+                        {% else %}
+                        <img src="{% static 'main/img/shema.jpg' %}" class="card-img-top" alt="...">
+                    {% endif %}
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Кімнат: {{ p.rooms }}</li>
                         <li class="list-group-item">Поверх: {{ p.etaj }}</li>

@@ -14,18 +14,19 @@ class Category(models.Model):
 
 # Create your models here.
 class Building(models.Model):
-    name = models.CharField(max_length=255, blank=True)
-    ochered = models.CharField(max_length=255, blank=True)
-    sdacha_sekcii = models.CharField(max_length=255, blank=True)
+    name = models.CharField(max_length=255, blank=True, verbose_name = 'Категория')
+    ochered = models.CharField(max_length=255, blank=True, verbose_name = 'очередь')
+    sdacha_sekcii = models.CharField(max_length=255, blank=True, verbose_name = 'Сдача секции' )
 
     sekciya = models.CharField(max_length=255, blank=True)
     etaj = models.CharField(max_length=255, blank=True)
-    number = models.CharField(max_length=255, blank=True)
-    ploshad = models.CharField(max_length=255, blank=True)
+    number = models.CharField(max_length=255, blank=True, verbose_name = 'Номер')
+    ploshad = models.CharField(max_length=255, blank=True, verbose_name = 'Площадь')
     price_za_kvadrat = models.CharField(max_length=255, blank=True)
-    total_price = models.CharField(max_length=255, blank=True)
+    total_price = models.CharField(max_length=255, blank=True, verbose_name = 'Цена')
 
-    photo = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True, default='project/main/static/main/img/2.jpg')
+    photo = models.ImageField(upload_to='photos/%Y/%m/%d/', verbose_name = 'Фото')
+    # photo = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True, default='project/main/static/main/img/2.jpg', verbose_name = 'Фото')
 
     bathroom = models.CharField(max_length=255, blank=True)
     kitchen = models.CharField(max_length=255, blank=True)
