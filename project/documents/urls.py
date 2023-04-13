@@ -3,4 +3,5 @@ from .views import *
 
 urlpatterns = [
     path('', docindex,name='docindex'),
+    path('reconstruction/', reconstruction, name='reconstruction')
 ]
