@@ -134,7 +134,7 @@
 <div class="blue-background " style="height: 330px;width: 100%">
     <div class="container">
 
-        <h2 style="text-align: center;height: 120px ">ВИБІР КВАРТИРИ ЗА ПАРАМЕТРАМИ</h2>
+        <h2 style="text-align: center;height: 70px ">ВИБІР КВАРТИРИ ЗА ПАРАМЕТРАМИ</h2>
         <div class="blocks">
 
 
@@ -191,16 +191,15 @@
                 </div>
 
             </div>
-                        <div class="block">
+            <div class="block">
+                <div class="title">Площа:</div>
+                <label for="customRange1" class="form-label">22 - 79 кв. м.</label>
+                <input type="range" class="form-range" min="22" max="79" id="customRange1">
 
-                            <div class="title">Площа:</div>
-                            <label for="customRange1" class="form-label">22 - 79 кв. м.</label>
-                            <input type="range" class="form-range" min="22" max="79" id="customRange1">
-
-                            <div class="title">Поверх:</div>
-                            <label for="customRange2" class="form-label">1 - 12</label>
-                            <input type="range" class="form-range" min="1" max="12" id="customRange2">
-                        </div>
+                <div class="title">Поверх:</div>
+                <label for="customRange2" class="form-label">1 - 12</label>
+                <input type="range" class="form-range" min="1" max="12" id="customRange2">
+            </div>
 
             <div class="text-center" id='btn_show'>
                 <a type="button" class="btn btn-success" href="{% url 'show_apartment' %}">ПОКАЗАТИ</a>
@@ -376,7 +375,6 @@
         <button type="submit">Отправить</button>
     </form>
 </div>
-
 
 
 <script src="{% static 'main/js/my.js' %}"></script>
