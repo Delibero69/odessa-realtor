@@ -84,7 +84,8 @@
                     </a>
                     <ul class="dropdown-menu" id="oformlenie-dropdown" onmouseover="showDropdown('oformlenie')"
                         onmouseout="hideDropdown('oformlenie')">
-                        <li><a class="dropdown-item" href="{% url 'docindex' %}">Реєстрація права власності на нерухомість, землю</a></li>
+                        <li><a class="dropdown-item" href="{% url 'docindex' %}">Реєстрація права власності на
+                            нерухомість, землю</a></li>
                         <li class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Дозвіл на будівництво та реконструкцію</a></li>
                         <li class="dropdown-divider"></li>
@@ -130,11 +131,12 @@
 
 {% block content %} {% endblock %}
 
-<div class="blue-background " style="height: 300px;width: 100%">
+<div class="blue-background " style="height: 330px;width: 100%">
     <div class="container">
 
-        <h2 style="text-align: center;height: 60px ">ВИБІР КВАРТИРИ ЗА ПАРАМЕТРАМИ</h2>
+        <h2 style="text-align: center;height: 120px ">ВИБІР КВАРТИРИ ЗА ПАРАМЕТРАМИ</h2>
         <div class="blocks">
+
 
             <div class="block">
                 <div class="title">Черга:</div>
@@ -187,25 +189,54 @@
                         3 кімнатна
                     </label>
                 </div>
+
             </div>
 
+{#            <form method="GET" class="form-inline mb-3 mt-3" action="{% url 'index' %}">#}
+{#                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Кількість кімнат:</label>#}
+{#                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="rooms">#}
+{#                    <option selected value="">Оберіть...</option>#}
+{#                    <option value="1">1</option>#}
+{#                    <option value="2">2</option>#}
+{#                    <option value="3">3</option>#}
+{#                    <option value="4">4</option>#}
+{#                    <option value="5">5</option>#}
+{#                </select>#}
+{#                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Поверх:</label>#}
+{#                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="etaj">#}
+{#                    <option selected value="">Оберіть...</option>#}
+{#                    <option value="1">1</option>#}
+{#                    <option value="2">2</option>#}
+{#                    <option value="3">3</option>#}
+{#                    <option value="4">4</option>#}
+{#                    <option value="5">5</option>#}
+{#                </select>#}
+{##}
+{#                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Площа:</label>#}
+{#                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="ploshad">#}
+{#                    <option selected value="">Оберіть...</option>#}
+{#                    <option value="30">до 30 м²</option>#}
+{#                    <option value="50">до 50 м²</option>#}
+{#                    <option value="70">до 70 м²</option>#}
+{#                    <option value="90">до 90 м²</option>#}
+{#                    <option value="100">більше 90 м²</option>#}
+{#                </select>#}
+{#            </form>#}
 
-            <div class="block">
 
-                <div class="title">Площа:</div>
-                <label for="customRange1" class="form-label">22 - 79 кв. м.</label>
-                <input type="range" class="form-range" min="22" max="79" id="customRange1">
+                        <div class="block">
 
-                <div class="title">Поверх:</div>
-                <label for="customRange2" class="form-label">1 - 12</label>
-                <input type="range" class="form-range" min="1" max="12" id="customRange2">
-            </div>
+                            <div class="title">Площа:</div>
+                            <label for="customRange1" class="form-label">22 - 79 кв. м.</label>
+                            <input type="range" class="form-range" min="22" max="79" id="customRange1">
+
+                            <div class="title">Поверх:</div>
+                            <label for="customRange2" class="form-label">1 - 12</label>
+                            <input type="range" class="form-range" min="1" max="12" id="customRange2">
+                        </div>
 
             <div class="text-center" id='btn_show'>
                 <a type="button" class="btn btn-success" href="{% url 'show_apartment' %}">ПОКАЗАТИ</a>
-
-
-
 
             </div>
         </div>
@@ -221,6 +252,9 @@
 
 
 {% block content2 %} {% endblock %}
+
+
+{% block content3 %} {% endblock %}
 
 
 
@@ -377,9 +411,6 @@
 </div>
 
 
-
-
-
 {#<div class="back_container2">#}
 {#    <h2 style="text-align: center;height: 60px;margin-top: 20px; ">ПОСТАВТЕ ПИТАННЯ І МИ З#}
 {#        РАДІСТЮ ВАМ ДОПОМОЖЕМО</h2>#}
@@ -403,10 +434,6 @@
 {#        <a type="button" class="btn btn-success" href="{% url 'call' %}">Надiслати</a>#}
 {#    </div>#}
 {#</div>#}
-
-
-
-
 
 
 <script src="{% static 'main/js/my.js' %}"></script>

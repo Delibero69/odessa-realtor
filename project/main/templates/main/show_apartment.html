@@ -1,22 +1,25 @@
 {% extends 'main/base.html' %}
 {% load static %}
 <title>{{ title }}</title>
-{% block content %}
 
-    <h2 style="text-align: center;height: 60px ">ВЫБОР КВАРТИРЫ ПО ПАРАМЕТРАМ</h2>
-{% endblock %}
+{#{% block content %}#}
+{##}
+{#    <h2 style="text-align: center;height: 88px ">ВИБІР КВАРТИРИ ЗА ПАРАМЕТРАМИ</h2>#}
+{##}
+{#{% endblock %}#}
 
 {% block content2 %}
 
 
     <div class="row" style="margin-top: 50px; margin-left: 4cm; margin-right: 2cm;">
-{% for p in apartment %}
-        <div class="col-md-4">
 
-            <div class="card mx-2 my-2" style="width: 20rem;">
-                    {%  if p.photo %}
+        {% for p in apartment %}
+            <div class="col-md-4">
+
+                <div class="card mx-2 my-2" style="width: 20rem;">
+                    {% if p.photo %}
                         <img src="{{ p.photo.url }}">
-                        {% else %}
+                    {% else %}
                         <img src="{% static 'main/img/shema.jpg' %}" class="card-img-top" alt="...">
                     {% endif %}
                     <ul class="list-group list-group-flush">
@@ -29,36 +32,77 @@
                     <div class="card-body text-center">
                         <a type="button" class="btn btn-success" href="{% url 'call' %}">Пiдiбрати квартиру</a>
                     </div>
+                </div>
             </div>
-
-        </div>
         {% endfor %}
-    </div>
+
+</div>
+
 
     <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-end">
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <ul class="pagination justify-content-end">
+        {% if page_obj.has_previous %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Предыдущая">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        {% endif %}
+        {% for num in paginator.page_range %}
+        {% if page_obj.number == num %}
+        <li class="page-item active"><a class="page-link" href="#">{{ num }}</a></li>
+        {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+        <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+        {% endif %}
+        {% endfor %}
+        {% if page_obj.has_next %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.next_page_number }}" aria-label="Следующая">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
 
 
-    </div>
+{% endblock %}
 
 
 
 
-
+{% block content3 %}
+{#    <form method="GET" class="form-inline mb-3 mt-3" action="{% url 'show_apartment' %}">#}
+{#        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Кількість кімнат:</label>#}
+{#        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="rooms">#}
+{#            <option selected value="">Оберіть...</option>#}
+{#            <option value="1">1</option>#}
+{#            <option value="2">2</option>#}
+{#            <option value="3">3</option>#}
+{#            <option value="4">4</option>#}
+{#            <option value="5">5</option>#}
+{#        </select>#}
+{#        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Поверх:</label>#}
+{#        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="etaj">#}
+{#            <option selected value="">Оберіть...</option>#}
+{#            <option value="1">1</option>#}
+{#            <option value="2">2</option>#}
+{#            <option value="3">3</option>#}
+{#            <option value="4">4</option>#}
+{#            <option value="5">5</option>#}
+{#        </select>#}
+{##}
+{#        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Площа:</label>#}
+{#        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="ploshad">#}
+{#            <option selected value="">Оберіть...</option>#}
+{#            <option value="30">до 30 м²</option>#}
+{#            <option value="50">до 50 м²</option>#}
+{#            <option value="70">до 70 м²</option>#}
+{#            <option value="90">до 90 м²</option>#}
+{#            <option value="100">більше 90 м²</option>#}
+{#        </select>#}
+{##}
+{#        <button type="submit" class="btn btn-primary my-1">Шукати</button>#}
+{#    </form>#}
 
 {% endblock %}

@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .forms import ContactForm,ContactForm2
 import asyncio
 from telegram import Bot
-
+from django.core.paginator import Paginator
 from .models import *
 
 
@@ -89,24 +89,11 @@ def call2(request):
     return render(request, 'main/index.html', {'form': form})
 
 
-
-
-def show_apartment(request, category_id=None):
-
-    apartment = Building.objects.all()
-    context = {'apartment': apartment,
-               'title':"Купить квартиру"
-               }
+def show_apartment(request):
+    apartment_list = Building.objects.all()
+    paginator = Paginator(apartment_list, 6) # 6 объектов на странице
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    context = {'apartment': page_obj, 'paginator': paginator,'title':"Купить квартиру"}
     return render(request, 'main/show_apartment.html', context)
 
-
-
-# def show_apartment(request):
-#     return render(request, 'main/show_apartment.html', )
-
-# def show_apartment(request, category_id=None):
-#     apartment = Building.objects.get(category_id=category_id)
-#     context = {'apartment': apartment,
-#                'title':"Купить Квартиру"
-#                }
-#     return render(request, 'main/show_apartment.html', context)

@@ -25,7 +25,7 @@ class Building(models.Model):
     price_za_kvadrat = models.CharField(max_length=255, blank=True)
     total_price = models.CharField(max_length=255, blank=True, verbose_name = 'Цена')
 
-    photo = models.ImageField(upload_to='photos/%Y/%m/%d/', verbose_name = 'Фото')
+    photo = models.ImageField(upload_to='photos/%Y/%m/%d/', verbose_name = 'Фото', blank=True)
     # photo = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True, default='project/main/static/main/img/2.jpg', verbose_name = 'Фото')
 
     bathroom = models.CharField(max_length=255, blank=True)
