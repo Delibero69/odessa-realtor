@@ -3,85 +3,168 @@
 
 {% block content %}
     <div id="content">
-  <!-- Здесь размещаем ваш контент -->
-</div>
-<div style="background-color: #dc0a0a; width: 100%; height: 100%;">
+        <!-- Здесь размещаем ваш контент -->
+    </div>
+    <div style="background-color: #dc0a0a; width: 100%; height: 100%;">
 
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class=""
-                    aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
-                    class=""></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"
-                    class="active" aria-current="true"></button>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class=""
+                        aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
+                        class=""></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"
+                        class="active" aria-current="true"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="{% static 'main/img/deniska.jpg' %}" class="d-block w-100" width="100%" height="600"
+                         alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Коммерческие обЬекты</h5>
+                        <p>У нас есть варианты именно для вас.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+
+                    <img src="{% static 'main/img/com_nedv.jpg' %}" class="d-block w-100" width="100%" height="600"
+                         alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Аренда</h5>
+                        <p>Тут вы можете арендовать помещение под ваши нужды</p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+
+                    <img src="{% static 'main/img/apart.jpg' %}" class="d-block w-100" width="100%" height="600"
+                         alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Квартиры</h5>
+                        <p>Димон лох.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item" data-bs-interval="10000">
-                <img src="{% static 'main/img/deniska.jpg' %}" class="d-block w-100" width="100%" height="600" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Коммерческие обЬекты</h5>
-                    <p>У нас есть варианты именно для вас.</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
 
-                <img src="{% static 'main/img/com_nedv.jpg' %}" class="d-block w-100" width="100%" height="600"
-                     alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Аренда</h5>
-                    <p>Тут вы можете арендовать помещение под ваши нужды</p>
-                </div>
-            </div>
-            <div class="carousel-item active">
-
-                <img src="{% static 'main/img/apart.jpg' %}" class="d-block w-100" width="100%" height="600" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Квартиры</h5>
-                    <p>Димон лох.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
     </div>
 
-</div>
+    <div class="blue-background_one">
 
-    <div class="black-background">
+    <h1 class="header text-center"
+        style="height: 160px; width:100%;margin-top: 20px; background-color: #343a40; color: #ffffff; padding-top: 50px; border-top: 5px solid #3fab25; border-bottom: 5px solid #3fab25;">
+        ОБЕРИ СВОЮ МРІЮ</h1>
+    <h2 class="header text-center" style="height: 80px;margin-top: 20px;">СКІЛЬКИ КІМНАТ У ТВОЇЙ МРІЇ?</h2>
 
     <div class="section">
-        <h1 class="header text-center" style="height: 160px; width:100%;margin-top: 20px; background-color: #343a40; color: #ffffff; padding-top: 50px; border-top: 5px solid #3fab25; border-bottom: 5px solid #3fab25;">ОБЕРИ СВОЮ МРІЮ</h1>
 
-
-        <h2 class="header text-center" style="height: 80px;margin-top: 20px;">СКІЛЬКИ КІМНАТ У ТВОЇЙ МРІЇ?</h2>
 
         <div class="global-flats__item">
             <img src="{% static 'main/img/1.jpg' %}" alt="1 комнатная" class="global-flats__img">
             <h2>1 КІМНАТНІ</h2>
-            <p>от 18 396 у.е.</p>
+            <p>вiд 18 396 у.е.</p>
             <button class="green-button">Підібрати квартиру</button>
         </div>
 
         <div class="global-flats__item">
             <img src="{% static 'main/img/2.jpg' %}" alt="2 комнатная" class="global-flats__img">
             <h2>2 КІМНАТНІ</h2>
-            <p>от 26 336 у.е</p>
+            <p>вiд 26 336 у.е</p>
             <button class="green-button">Підібрати квартиру</button>
         </div>
 
         <div class="global-flats__item">
             <img src="{% static 'main/img/3.jpg' %}" alt="3 комнатная" class="global-flats__img">
             <h2>3 КІМНАТНІ</h2>
-            <p>от 36 314 у.е.</p>
+            <p>вiд 36 314 у.е.</p>
             <button class="green-button">Підібрати квартиру</button>
         </div>
     </div>
 
+    <div class="blue-background" style="height: 400px;width: 100%">
+        <div class="container1 ">
+
+            <h2 style="text-align: center;height: 70px ">ВИБІР КВАРТИРИ ЗА ПАРАМЕТРАМИ</h2>
+            <div class="blocks">
+
+
+                <div class="block">
+                    <div class="title">Черга:</div>
+
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Усі черги</option>
+                        <option value="1">Секція 1</option>
+                        <option value="2">Секція 2</option>
+                        <option value="3">Секція 3</option>
+                        <option value="3">Секція 4</option>
+                        <option value="3">Секція 5</option>
+                        <option value="3">Секція 6</option>
+                        <option value="3">Секція 7</option>
+                        <option value="3">Секція 8</option>
+                    </select>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Усі варіанти
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Студія
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            1 кімнатна
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            2 кімнатна
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            3 кімнатна
+                        </label>
+                    </div>
+
+                </div>
+                <div class="block">
+                    <div class="title">Площа:</div>
+                    <label for="customRange1" class="form-label">22 - 79 кв. м.</label>
+                    <input type="range" class="form-range" min="22" max="79" id="customRange1">
+                </div>
+                <div class="block">
+                    <div class="title">Поверх:</div>
+                    <label for="customRange2" class="form-label">1 - 12</label>
+                    <input type="range" class="form-range" min="1" max="12" id="customRange2">
+                </div>
+
+                <div class="text-center" id='btn_show'>
+                    <a type="button" class="btn btn-success" href="{% url 'show_apartment' %}">ПОКАЗАТИ</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
 

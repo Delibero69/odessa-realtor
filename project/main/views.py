@@ -17,6 +17,12 @@ def index(request):
     }
     return render(request, "main/index.html", context)
 
+def riviera(request):
+    context = {
+        'title': "Житловий район Сади Рів'єри",
+    }
+    return render(request, "main/riviera.html", context)
+
 def call(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
