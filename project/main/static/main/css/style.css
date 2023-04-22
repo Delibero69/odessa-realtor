@@ -52,7 +52,6 @@ form textarea {
 }
 
 
-
 .container1 {
     display: flex;
     flex-direction: column;
@@ -182,6 +181,7 @@ form textarea {
     background-size: cover;
     /*background-color:mediumseagreen;*/
 }
+
 .section {
     display: flex;
     justify-content: center;
@@ -192,8 +192,13 @@ form textarea {
 .global-flats__item img {
     width: 100%;
     border-radius: 5px;
+    z-index: 2;
+    border: 1px solid gray;
 }
 
+/*.global-flats__img{*/
+/*    opacity: 0.8;*/
+/*}*/
 .global-flats__item h2 {
     font-size: 24px;
     margin: 0;
@@ -219,6 +224,7 @@ form textarea {
     border-radius: 6px;
 
 }
+
 form label {
     display: block;
     margin-bottom: 5px;
