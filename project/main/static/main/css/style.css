@@ -188,6 +188,10 @@ form textarea {
     gap: 150px;
 }
 
+.fon_back {
+    background-image: url('https://ua.riviera-gardens.com.ua/img/newImg/bg_faq.png');
+    /*background-size: cover;*/
+}
 
 .global-flats__item img {
     width: 100%;
