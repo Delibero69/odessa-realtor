@@ -1,5 +1,5 @@
 .blue-background_one {
-    background-image: url('https://img.freepik.com/free-photo/beige-paintbrush-stroke-textured-background_53876-129531.jpg?w=996&t=st=1682169783~exp=1682170383~hmac=aac2a5418a013ff8ac6787025e1c697b424a6e92d3b4aa958dc202e430eb35a9');
+    background-image: url('https://ua.riviera-gardens.com.ua/img/newImg/bg_faq.png');
     background-size: cover;
     /*background-position: center;*/
     /*background-repeat: no-repeat;*/
@@ -148,6 +148,7 @@
 .global-flats__item img {
     width: 100%;
     border-radius: 5px;
+    border: 1px solid gray;
 }
 
 .global-flats__item h2 {

@@ -12,18 +12,6 @@
     color: black;
 }
 
-.back_container2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://riviera-gardens.com.ua/img/newImg/bg_faq.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-}
-
-
 form {
     /* Удаление маргина и паддинга */
     margin: 0;
@@ -188,6 +176,10 @@ form textarea {
     gap: 150px;
 }
 
+.fon_back {
+    background-image: url('https://ua.riviera-gardens.com.ua/img/newImg/bg_faq.png');
+    /*background-size: cover;*/
+}
 
 .global-flats__item img {
     width: 100%;
@@ -196,9 +188,7 @@ form textarea {
     border: 1px solid gray;
 }
 
-/*.global-flats__img{*/
-/*    opacity: 0.8;*/
-/*}*/
+
 .global-flats__item h2 {
     font-size: 24px;
     margin: 0;
@@ -449,25 +439,34 @@ form button[type="submit"]:hover {
     margin: 0 auto;
 }
 
-.back_container {
+
+.backgr {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 112%;
     background-image: url('https://riviera-gardens.com.ua/img/newImg/bg_faq.png');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+
 }
 
-#my-div {
 
-    height: 600px;
+.back_container3 {
+    position: relative;
+    /*height: 35%;*/
+    margin-top: 222px;
+    /*left: 0%;*/
 }
+
+
+
+
+
 
 @media (max-width: 1400px) {
     #kn {
-        margin-left: 0%;
+        margin-left: 1%;
         white-space: nowrap;
     }
 
@@ -492,14 +491,6 @@ form button[type="submit"]:hover {
 
     }
 
-    .back_container2 {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-image: url('https://riviera-gardens.com.ua/img/newImg/bg_faq.png');
-
-        margin: 0 auto;
-    }
 
     #my-form {
         position: absolute;
