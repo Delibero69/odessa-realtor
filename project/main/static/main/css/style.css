@@ -178,10 +178,9 @@ form textarea {
 }
 
 .blue-background_one {
-    /*background-image: url('https://kartinkin.net/uploads/posts/2021-07/thumbs/1626792625_31-kartinkin-com-p-oboi-dlya-sten-tekstura-besshovnaya-krasiv-31.jpg');*/
-    /*background-image: url('https://img.freepik.com/free-photo/white-marble-texture-with-natural-pattern-for-background-or-design-art-work-high-resolution_1258-70518.jpg?w=1380&t=st=1682172797~exp=1682173397~hmac=c8c293aa449964765d482aec3daf038cd8340d47d2fd60166c252d4bc0aee0c2');*/
-    /*background-size: cover;*/
-    background-color:wheat;
+    background-image: url('https://ua.riviera-gardens.com.ua/img/newImg/bg_faq.png');
+    background-size: cover;
+    /*background-color:mediumseagreen;*/
 }
 .section {
     display: flex;
