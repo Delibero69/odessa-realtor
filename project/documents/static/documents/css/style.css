@@ -190,12 +190,3 @@
    .what-h3 {
         font-size: 36px;
       }
-   .step{
-       width: 10%;
-       height: 10%;
-       position: absolute;
-       top: 250%;
-       border-radius: 100%;
-       border: 2px solid black;
-
-   }
