@@ -28,7 +28,7 @@
                     <ul class="dropdown-menu" id="pokypka-dropdown" onmouseover="showDropdown('pokypka')"
                         onmouseout="hideDropdown('pokypka')">
 
-                        <li><a class="dropdown-item" href="#">Житловий район "Сади Рів'єри"</a></li>
+                        <li><a class="dropdown-item" href="{% url 'riviera' %}">Житловий район "Сади Рів'єри"</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown" id='kom_nedv' onmouseover="showDropdown('kom_nedv')"
@@ -68,6 +68,7 @@
                         <li><a class="dropdown-item" href="#">КОМЕРЦІЙНІ ПРИМІЩЕННЯ</a></li>
                     </ul>
                 </li>
+
                 <li class="nav-item dropdown" id='oformlenie' onmouseover="showDropdown('oformlenie')"
                     onmouseout="hideDropdown('oformlenie')">
                     <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
@@ -76,7 +77,8 @@
                     </a>
                     <ul class="dropdown-menu" id="oformlenie-dropdown" onmouseover="showDropdown('oformlenie')"
                         onmouseout="hideDropdown('oformlenie')">
-                        <li><a class="dropdown-item" href="#">Реєстрація права власності на нерухомість, землю</a></li>
+                        <li><a class="dropdown-item" href="{% url 'docindex' %}">Реєстрація права власності на
+                            нерухомість, землю</a></li>
                         <li class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Дозвіл на будівництво та реконструкцію</a></li>
                         <li class="dropdown-divider"></li>
@@ -123,11 +125,16 @@
         <img src="{% static 'documents/img/bti-cuted.jpg' %}"alt="Фото" class="photo" id="backgr">
 
         <div class="text">
-<!--            <h1>ОФОРМЛЕННЯ ПРАВА ВЛАСНОСТІ НА НЕРУХОМЕ МАЙНО</h1>-->
-<!--            <h2 class="description">Державна реєстрація речових прав на нерухоме майно та їх обтяжень – офіційне визнання і підтвердження державою фактів набуття, зміни або припинення речових прав на нерухоме майно, обтяжень таких прав-->
-<!--                шляхом внесення відповідних відомостей до Державного реєстру речових прав на нерухоме майно.</h2>-->
+          <h1>ОФОРМЛЕННЯ ПРАВА ВЛАСНОСТІ НА НЕРУХОМЕ МАЙНО</h1>
+            <h2 class="description">Державна реєстрація речових прав на нерухоме майно та їх обтяжень – офіційне визнання і підтвердження державою фактів набуття, зміни або припинення речових прав на нерухоме майно, обтяжень таких прав
+                шляхом внесення відповідних відомостей до Державного реєстру речових прав на нерухоме майно.</h2>
             {% block content2 %} {% endblock %}
       </div>
     </div>
+<div class="blue-bar"></div>
+  <div class="text-block">
+      <h1>ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ ПРАВ ПОДЛЕЖАТ:</h1>
+    </div>
+<div class="poxiy" ></div>
 </body>
 </html>

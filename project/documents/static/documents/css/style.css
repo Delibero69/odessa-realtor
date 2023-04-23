@@ -22,7 +22,7 @@
 
 .text {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 30%;
     transform: translate(-50%, -50%);
     width: 30%;
@@ -59,4 +59,29 @@
 }
 .description{
     font-size: 20px;
+}
+.blue-bar{
+    background-color: #0056b3;
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        top: 85%;
+        left: 0;
+        z-index: 0;
+}
+.text-block {
+    color: white;
+        padding: 5px; /* внутренний отступ блока */
+        border-top: 5px solid white; /* верхняя белая полоса */
+        border-bottom: 5px solid white; /* нижняя белая полоса */
+    position: absolute;
+        top: 90%;
+    z-index: 1;
+    left: 15%;
+      }
+.poxiy{
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    top: 110%;
 }
