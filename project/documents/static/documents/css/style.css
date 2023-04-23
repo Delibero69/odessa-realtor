@@ -1,3 +1,35 @@
+
+
+#glavnaia {
+    margin-left: 35%;
+    white-space: nowrap;
+}
+
+#kn {
+    margin-left: 5%;
+    white-space: nowrap;
+}
+
+#number {
+    margin-left: 5%;
+}
+
+#oformlenie {
+    margin-left: 5%;
+}
+
+#pokypka {
+    margin-left: 5%;
+}
+
+#kom_nedv {
+    margin-left: 5%;
+}
+
+#rent {
+    margin-left: 5%;
+}
+
 .container {
     /*position: relative;*/
     max-width: 1000px;
