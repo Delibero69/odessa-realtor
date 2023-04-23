@@ -36,20 +36,14 @@
     padding: 20px;
     top: 11%;
 }
-#backgr{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 90%;
-  width: 100%;
+
+#backgr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
 }
-/*.photo {*/
-/*    !*display: block;*!*/
-/*    !*max-width: 100%;*!*/
-/*    !*left: 0%;*! !* удалить или закомментировать эту строку *!*/
-/*    width : 100%; !* изменить "weight" на "width" и задать значение в процентах или другой единице измерения *!*/
-/*    height: 80%; !* увеличиваем высоту фото до 80% *!*/
-/*}*/
 
 
 .text {
@@ -92,142 +86,161 @@
 .text .btn:hover {
     background-color: #0056b3;
 }
-.description{
+
+.description {
     font-size: 20px;
 }
-.blue-bar{
+
+.blue-bar {
     background-color: #2883e5;
-        height: 50%;
-        width: 100%;
-        position: absolute;
-        top: 85%;
-        left: 0;
-        z-index: 0;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    left: 0%;
+    z-index: 0;
 }
+
 .text-block {
     color: white;
     position: absolute;
-        top: 90%;
+    top: 90%;
     z-index: 1;
     left: 15%;
-      }
-.h11{
-     padding: 5px; /* внутренний отступ блока */
-        border-top: 5px solid white; /* верхняя белая полоса */
-        border-bottom: 5px solid white; /* нижняя белая полоса */
 }
-.poxiy{
+
+.h11 {
+    padding: 5px; /* внутренний отступ блока */
+    border-top: 5px solid white; /* верхняя белая полоса */
+    border-bottom: 5px solid white; /* нижняя белая полоса */
+}
+
+.poxiy {
     height: 700px;
     width: 100%;
     position: absolute;
     top: 210%;
 }
-  ol {
-      position: absolute;
-      top: 130%;
-      color: white;
-      font-size: 20px;
-        list-style-type: decimal; /* тип нумерации списка - десятичная */
-        margin: 20px 0; /* отступы сверху и снизу списка */
-        padding: 0 0 0 40px; /* отступы слева и справа списка */
-      }
-      /* стили для отдельных элементов списка */
-      li {
-        margin-bottom: 10px; /* отступ между элементами списка */
-      }
-      .white-bar{
-          font-size: 50px;
-          padding: 30px; /* внутренний отступ блока */
-        border-top: 3px solid black; /* верхняя белая полоса */
-        border-bottom: 3px solid black; /* нижняя белая полоса */
-          padding-top: 10px; /* добавить верхний внутренний отступ */
-        padding-bottom: 10px;
-          left: 35%;
-          position: absolute;
-          top: 140%;
-          color: black;
-          z-index: 1;
-      }
- .what-h2 {
-        font-size: 36px;
-      }
- .blue-bar2{
-    background-color: #2883e5;
-        height: 50%;
-        width: 100%;
-        position: absolute;
-        top: 155%;
-        left: 0;
-        z-index: 0;
-}
- .img-call{
-     width: 5%;
-     height:auto;
-     position: absolute;
-     left: 25%;
-     top: 30%;
- }
- .img-inger{
-     width: 5%;
-     position: absolute;
-     left: 50%;
-     top: 30%;
- }
- .img-homer{
-       width: 5%;
-     position: absolute;
-     left: 75%;
-     top: 30%
- }
- .img-call-text{
-     color: white;
-     position: absolute;
-     left: 19.3%;
-     top: 60%;
-     font-size: 16px;
-     font-weight: 500;
-     font-family:font-family;
- }
- .img-inger-text{
-     color: white;
-     position: absolute;
-     left: 46%;
-     top: 60%;
-     font-size: 16px;
-     font-weight: 500;
-     font-family:font-family;
- }
-  .img-homer-text{
-     color: white;
-     position: absolute;
-     left: 72%;
-     top: 60%;
-     font-size: 16px;
-     font-weight: 500;
-     font-family:font-family;
- }
-  .white-bar2{
-          font-size: 50px;
-          padding: 30px; /* внутренний отступ блока */
-        border-top: 3px solid black; /* верхняя белая полоса */
-        border-bottom: 3px solid black; /* нижняя белая полоса */
-          padding-top: 10px; /* добавить верхний внутренний отступ */
-        padding-bottom: 10px;
-          left: 25%;
-          position: absolute;
-          top: 210%;
-          color: black;
-          z-index: 2;
-      }
-   .what-h3 {
-        font-size: 36px;
-      }
-   .step{
-       width: 10%;
-       height: 10%;
-       position: absolute;
-       top: 250%;
-       border-radius: 100%;
-       border: 2px solid black;
 
-   }
+ol {
+    position: absolute;
+    top: 130%;
+    color: white;
+    font-size: 20px;
+    list-style-type: decimal; /* тип нумерации списка - десятичная */
+    margin: 20px 0; /* отступы сверху и снизу списка */
+    padding: 0 0 0 40px; /* отступы слева и справа списка */
+}
+
+/* стили для отдельных элементов списка */
+li {
+    margin-bottom: 10px; /* отступ между элементами списка */
+}
+
+.white-bar {
+    font-size: 50px;
+    padding: 30px; /* внутренний отступ блока */
+    border-top: 3px solid black; /* верхняя белая полоса */
+    border-bottom: 3px solid black; /* нижняя белая полоса */
+    padding-top: 10px; /* добавить верхний внутренний отступ */
+    padding-bottom: 10px;
+    left: 40%;
+    position: absolute;
+    top: 140%;
+    color: black;
+    z-index: 1;
+}
+
+.what-h2 {
+    font-size: 36px;
+}
+
+.blue-bar2 {
+    background-color: #2883e5;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 155%;
+    left: 0;
+    z-index: 0;
+}
+
+.img-call {
+    width: 5%;
+    height: auto;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+}
+
+.img-inger {
+    width: 5%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+}
+
+.img-homer {
+    width: 5%;
+    position: absolute;
+    left: 75%;
+    top: 30%
+}
+
+.img-call-text {
+    color: white;
+    position: absolute;
+    left: 19.3%;
+    top: 60%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: font-family;
+}
+
+.img-inger-text {
+    color: white;
+    position: absolute;
+    left: 46%;
+    top: 60%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: font-family;
+}
+
+.img-homer-text {
+    color: white;
+    position: absolute;
+    left: 72%;
+    top: 60%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: font-family;
+}
+
+.white-bar2 {
+    font-size: 50px;
+    padding: 30px; /* внутренний отступ блока */
+    border-top: 3px solid black; /* верхняя белая полоса */
+    border-bottom: 3px solid black; /* нижняя белая полоса */
+    padding-top: 10px; /* добавить верхний внутренний отступ */
+    padding-bottom: 10px;
+    left: 30%;
+    position: absolute;
+    top: 210%;
+    color: black;
+    z-index: 2;
+}
+
+.what-h3 {
+    font-size: 36px;
+}
+
+.step {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 250%;
+    border-radius: 100%;
+    border: 2px solid black;
+
+}

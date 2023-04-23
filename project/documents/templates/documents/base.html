@@ -5,11 +5,15 @@
 <head>
     <link rel="stylesheet" href="{% static 'documents/css/style.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-6U7n6UomzI5ZoOW0IoHUOIf+0BxerLlYT+IBvXyJ7wrj5TokS4Yw5KI0G5qQb4J4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+          integrity="sha384-6U7n6UomzI5ZoOW0IoHUOIf+0BxerLlYT+IBvXyJ7wrj5TokS4Yw5KI0G5qQb4J4" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/145aaead63.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ title }}</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-dark fixed-top" style="padding-left: 0.3cm; padding-right: 0.3cm;">
@@ -21,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                 <li class="nav-item " id='glavnaia' >
+                <li class="nav-item " id='glavnaia'>
                     <a class="nav-link  text-white" href="{% url 'index' %}" role="button">
                         Головна
                     </a>
@@ -130,33 +134,37 @@
         </div>
     </div>
 </nav>
-  <div class="container">
-        <img src="{% static 'documents/img/bti-cuted.jpg' %}"alt="Фото" class="photo" id="backgr">
+<div class="container">
+    <img src="{% static 'documents/img/bti-cuted.jpg' %}" alt="Фото" class="photo" id="backgr">
 
-        <div class="text">
-          <h1>ОФОРМЛЕННЯ ПРАВА ВЛАСНОСТІ НА НЕРУХОМЕ МАЙНО</h1>
-            <h2 class="description" style="    text-align: left;">Державна реєстрація речових прав на нерухоме майно та їх обтяжень – офіційне визнання і підтвердження державою фактів набуття, зміни або припинення речових прав на нерухоме майно, обтяжень таких прав
-                шляхом внесення відповідних відомостей до Державного реєстру речових прав на нерухоме майно.</h2>
-            {% block content2 %} {% endblock %}
-      </div>
+    <div class="text">
+        <h1>ОФОРМЛЕННЯ ПРАВА ВЛАСНОСТІ НА НЕРУХОМЕ МАЙНО</h1>
+        <h2 class="description" style="text-align: left;">Державна реєстрація речових прав на нерухоме майно та їх
+            обтяжень – офіційне визнання і підтвердження державою фактів набуття, зміни або припинення речових прав на
+            нерухоме майно, обтяжень таких прав
+            шляхом внесення відповідних відомостей до Державного реєстру речових прав на нерухоме майно.</h2>
+        {% block content2 %} {% endblock %}
     </div>
+</div>
 <div class="blue-bar"></div>
-  <div class="text-block">
-      <div class="h11" >
-      <h1>ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ ПРАВ ПОДЛЕЖАТ:</h1>
-          </div>
-      <ol>
-    <li>право власності;</li>
-    <li>речові права, похідні від права власності;</li>
-    <li>право власності на об’єкт незавершеного будівництва;</li>
-    <li>заборона відчуження та арешт нерухомого майна, податкова застава, предметом якої є нерухоме майно, та інші обтяження.</li>
-</ol>
+<div class="text-block">
+    <div class="h11">
+        <h1>ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ ПРАВ ПОДЛЕЖАТ:</h1>
     </div>
+    <ol>
+        <li>право власності;</li>
+        <li>речові права, похідні від права власності;</li>
+        <li>право власності на об’єкт незавершеного будівництва;</li>
+        <li>заборона відчуження та арешт нерухомого майна, податкова застава, предметом якої є нерухоме майно, та інші
+            обтяження.
+        </li>
+    </ol>
+</div>
 <div class="white-bar">
     <h2 class="what-h2"><strong>ЧОМУ НАМ ДОВІРЯЮТЬ</strong></h2>
 </div>
 <div class="blue-bar2">
-<img class="img-call" src="{% static 'documents/img/call.png' %}">
+    <img class="img-call" src="{% static 'documents/img/call.png' %}">
     <h1 class="img-call-text">БЕЗКОШТОВНА КОНСУЛЬТАЦІЯ</h1>
     <img class="img-inger" src="{% static 'documents/img/inger.png' %}">
     <h1 class="img-inger-text">ІНДИВІДУАЛЬНИЙ ПІДХІД</h1>
@@ -167,10 +175,46 @@
     <h3 class="what-h3"><strong>ЩО ВИ ОТРИМАЄТЕ ПІСЛЯ КОНСУЛЬТАЦІЇ?</strong></h3>
 </div>
 
-<div class="elementor-icon">
-   <img src="{% static 'documents/img/dsadsa.png' %}" class="step" style="border-radius: 50%; border: 2px solid black;">>
 
-    </div>
-<div class="poxiy" ></div>
+<div style="position: relative; height: 2100px;">
+    <footer style="position: absolute; bottom: 0; width: 100%;">
+        <nav style="display: flex; justify-content: center; gap: 100px;margin: -10px" class="navbar">
+            <a class="navbar-brand" href="https://www.instagram.com/">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="{% static 'main/img/equalizer-icon-9.jpg' %}" width="100" height="100" alt="">
+                    {#                    <i class="large material-icons">equalizer</i>#}
+                    <span style="line-height: 1.5; display: inline-block;">Пошаговый план действий</span>
+                </div>
+            </a>
+            <a class="navbar-brand" href="https://www.instagram.com/">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="{% static 'main/img/zn_voprosa.png' %}" width="100" height="100" alt="">
+                    {#                    <i class="large material-icons">live_help</i>#}
+                    <span style="line-height: 1.5; display: inline-block;">Ответы на возникшие </span><span
+                        style="display: block; text-align:center;">вопросы</span>
+                </div>
+            </a>
+            <a class="navbar-brand" href="https://www.instagram.com/">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="{% static 'main/img/book.png' %}" width="100" height="100" alt="">
+                    {#                    <i class="large material-icons">find_in_page</i>#}
+                    <span style="line-height: 1.5; display: inline-block;"></span>
+                    Список рекомендаций с обьяснениями <span
+                        style="display: block; text-align:center;">как их применять</span>
+                </div>
+            </a>
+            <a class="navbar-brand" href="https://www.instagram.com/">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="{% static 'main/img/icon-dollar.png' %}" width="100" height="100" alt="">
+                    {#                    <i class="large material-icons">widgets</i>#}
+                    <span style="line-height: 1.5; display: inline-block;">Конкретную смету,<br>стоимость и сроки </span>
+                </div>
+            </a>
+        </nav>
+    </footer>
+</div>
+
+
+{#<div class="poxiy"></div>#}
 </body>
 </html>
