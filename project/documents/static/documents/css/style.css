@@ -34,8 +34,11 @@
 }
 
 .text h1 {
-    font-size: 40px;
+    font-size: 84%;
     margin-bottom: 20px;
+    border-top: 3px solid black; /* верхняя белая полоса */
+    border-bottom: 3px solid black; /* нижняя белая полоса */
+    text-align: left;
 }
 
 .text p {
@@ -61,7 +64,7 @@
     font-size: 20px;
 }
 .blue-bar{
-    background-color: #0056b3;
+    background-color: #2883e5;
         height: 50%;
         width: 100%;
         position: absolute;
@@ -71,17 +74,57 @@
 }
 .text-block {
     color: white;
-        padding: 5px; /* внутренний отступ блока */
-        border-top: 5px solid white; /* верхняя белая полоса */
-        border-bottom: 5px solid white; /* нижняя белая полоса */
     position: absolute;
         top: 90%;
     z-index: 1;
     left: 15%;
       }
+.h11{
+     padding: 5px; /* внутренний отступ блока */
+        border-top: 5px solid white; /* верхняя белая полоса */
+        border-bottom: 5px solid white; /* нижняя белая полоса */
+}
 .poxiy{
     height: 700px;
     width: 100%;
     position: absolute;
     top: 110%;
+}
+  ol {
+      position: absolute;
+      top: 130%;
+      color: white;
+      font-size: 20px;
+        list-style-type: decimal; /* тип нумерации списка - десятичная */
+        margin: 20px 0; /* отступы сверху и снизу списка */
+        padding: 0 0 0 40px; /* отступы слева и справа списка */
+      }
+      /* стили для отдельных элементов списка */
+      li {
+        margin-bottom: 10px; /* отступ между элементами списка */
+      }
+      .white-bar{
+          font-size: 50px;
+          padding: 30px; /* внутренний отступ блока */
+        border-top: 3px solid black; /* верхняя белая полоса */
+        border-bottom: 3px solid black; /* нижняя белая полоса */
+          padding-top: 10px; /* добавить верхний внутренний отступ */
+        padding-bottom: 10px;
+          left: 35%;
+          position: absolute;
+          top: 140%;
+          color: black;
+          z-index: 1;
+      }
+ .what-h2 {
+        font-size: 36px;
+      }
+ .blue-bar2{
+    background-color: #2883e5;
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        top: 155%;
+        left: 0;
+        z-index: 0;
 }
