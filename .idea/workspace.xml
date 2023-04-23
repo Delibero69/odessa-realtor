@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a9ae018e-2641-44b6-a5c0-e861ad4e8e98" name="Changes" comment="11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/main/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/main/templates/main/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <updated>1682190089325</updated>
       <workItem from="1682190091890" duration="1144000" />
       <workItem from="1682256715707" duration="541000" />
-      <workItem from="1682259522044" duration="308000" />
+      <workItem from="1682259522044" duration="1420000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <created>1682256777243</created>
@@ -105,7 +106,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682257159094</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="11">
+      <created>1682259867557</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682259867557</updated>
+    </task>
+    <task id="LOCAL-00006" summary="11">
+      <created>1682259986736</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682259986736</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +131,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="11" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/odessa_realtor$manage.coverage" NAME="manage Coverage Results" MODIFIED="1682256805744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
+    <SUITE FILE_PATH="coverage/odessa_realtor$manage.coverage" NAME="manage Coverage Results" MODIFIED="1682273905514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
     <SUITE FILE_PATH="coverage/odessa_realtor$test.coverage" NAME="test Coverage Results" MODIFIED="1681131122730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/main" />
   </component>
 </project>
