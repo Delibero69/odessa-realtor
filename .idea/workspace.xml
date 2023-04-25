@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9ae018e-2641-44b6-a5c0-e861ad4e8e98" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;project/main/templates/main/base.html" />
+    <list default="true" id="a9ae018e-2641-44b6-a5c0-e861ad4e8e98" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;project/main/templates/main/base.html">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/main/static/main/img/apart.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/project/main/static/main/img/apart.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/main/static/main/img/deniska.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/project/main/static/main/img/deniska.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/main/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/main/templates/main/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/main/templates/main/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +81,11 @@
       <workItem from="1682190091890" duration="1144000" />
       <workItem from="1682256715707" duration="541000" />
       <workItem from="1682259522044" duration="8096000" />
+      <workItem from="1682285657293" duration="254000" />
+      <workItem from="1682328977141" duration="166000" />
+      <workItem from="1682344718882" duration="30000" />
+      <workItem from="1682413576854" duration="159000" />
+      <workItem from="1682444988595" duration="2219000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <created>1682256777243</created>
@@ -145,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682280852851</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;project/main/templates/main/base.html">
+      <created>1682285671657</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682285671657</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;project/main/templates/main/base.html">
+      <created>1682285880513</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682285880513</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +183,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;project/main/templates/main/base.html" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/odessa_realtor$manage.coverage" NAME="manage Coverage Results" MODIFIED="1682276505962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
+    <SUITE FILE_PATH="coverage/odessa_realtor$manage.coverage" NAME="manage Coverage Results" MODIFIED="1682446499457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
     <SUITE FILE_PATH="coverage/odessa_realtor$test.coverage" NAME="test Coverage Results" MODIFIED="1681131122730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/main" />
   </component>
 </project>
