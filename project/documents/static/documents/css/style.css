@@ -1,5 +1,16 @@
+@media (max-width: 1900px) {
+
+    #footer_navbar{
+        position: relative;
+        height: 2040px;
+    }
+}
 
 
+ #footer_navbar{
+        position: relative;
+        height: 2100px;
+    }
 #glavnaia {
     margin-left: 35%;
     white-space: nowrap;
