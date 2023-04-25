@@ -25,15 +25,15 @@
     }
 
     #pokypka {
-        margin-left: 30%;
+        margin-left: 90%;
     }
 
     #kom_nedv {
-        margin-left: 8%;
+        margin-left: 80%;
     }
 
     #rent {
-        margin-left: 12%;
+        margin-left: 120%;
     }
 
 
@@ -302,7 +302,7 @@ form button[type="submit"]:hover {
 }
 
 #pokypka {
-    margin-left: 65%;
+    margin-left: 25%;
 }
 
 #kom_nedv {
