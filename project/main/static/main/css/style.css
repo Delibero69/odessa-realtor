@@ -1,4 +1,50 @@
+@media (max-width: 1900px) {
 
+#navbar_back{
+    position: absolute;
+    margin-top: 915px;
+    width: 100%;
+    opacity: 0.9;
+}
+    #glavnaia {
+        margin-left: 10%;
+        white-space: nowrap;
+    }
+
+    #kn {
+        margin-left: 5%;
+        white-space: nowrap;
+    }
+
+    #number {
+        margin-left: 9%;
+    }
+
+    #oformlenie {
+        margin-left: 4%;
+    }
+
+    #pokypka {
+        margin-left: 65%;
+    }
+
+    #kom_nedv {
+        margin-left: 8%;
+    }
+
+    #rent {
+        margin-left: 12%;
+    }
+
+
+}
+
+#navbar_back{
+    position: absolute;
+    margin-top: 915px;
+    width: 100%;
+    opacity: 0.9;
+}
 #content {
     margin-top: 100px; /* Размер навбара */
 }
@@ -458,10 +504,6 @@ form button[type="submit"]:hover {
     margin-top: 185px;
     /*left: 0%;*/
 }
-
-
-
-
 
 
 @media (max-width: 1400px) {
