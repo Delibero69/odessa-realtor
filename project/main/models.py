@@ -22,6 +22,10 @@ class Building(models.Model):
     etaj = models.CharField(max_length=255, blank=True)
     number = models.CharField(max_length=255, blank=True, verbose_name = 'Номер')
     ploshad = models.CharField(max_length=255, blank=True, verbose_name = 'Площадь')
+
+    # price_za_kvadrat = models.DecimalField(max_digits=6, decimal_places=2, blank=True)
+    # total_price = models.DecimalField(max_digits=6, decimal_places=2, blank=True)
+
     price_za_kvadrat = models.CharField(max_length=255, blank=True)
     total_price = models.CharField(max_length=255, blank=True, verbose_name = 'Цена')
 
